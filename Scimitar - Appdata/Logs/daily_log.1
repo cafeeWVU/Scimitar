@@ -1,0 +1,86 @@
+2018-02-09 17:19:32,229 __init__ INFO ================= Welcome to Scimitar: Good luck. =================
+2018-02-09 17:19:32,230 __init__ INFO Splash screen changed to 'Loading numeric functions...'
+2018-02-09 17:19:32,322 __init__ INFO Splash screen changed to 'Checking versions of dependent components...'
+2018-02-09 17:19:32,322 __init__ INFO Splash screen changed to 'Checking release version...'
+2018-02-09 17:19:32,326 __init__ INFO Splash screen changed to 'Raising process priority...'
+2018-02-09 17:19:32,335 __init__ INFO Splash screen changed to 'Supressing screensaver/sleep/hibernate...'
+2018-02-09 17:19:32,349 __init__ INFO Splash screen changed to 'Creating network adapter monitor...'
+2018-02-09 17:19:32,407 __init__ DEBUG Adding network: IPv4Network('192.168.1.239/24')
+2018-02-09 17:19:32,410 __init__ INFO Splash screen changed to 'Checking folders...'
+2018-02-09 17:19:32,411 __init__ INFO Splash screen changed to 'Checking for data in need of recovery...'
+2018-02-09 17:19:32,625 __init__ INFO Finished searching for unrecovered data.
+2018-02-09 17:19:32,625 __init__ INFO Splash screen changed to 'Loading data structure library...'
+2018-02-09 17:19:32,628 __init__ INFO Splash screen changed to 'Loading laboratory tree...'
+2018-02-09 17:19:33,236 __init__ DEBUG Loaded tree in 596.1 milliseconds using expat
+2018-02-09 17:19:33,247 __init__ INFO Splash screen changed to 'Loading data acquisition code...'
+2018-02-09 17:19:33,249 __init__ INFO Splash screen changed to 'Loading data acquisition tree...'
+2018-02-09 17:19:33,395 __init__ DEBUG Serial win32 monkey patch (new method) ok
+2018-02-09 17:19:33,418 __init__ DEBUG Serial win32 monkey patch (new method) ok
+2018-02-09 17:19:34,242 __init__ DEBUG Loaded tree in 985.3 milliseconds using expat
+2018-02-09 17:19:34,246 __init__ INFO Splash screen changed to 'Starting timing thread...'
+2018-02-09 17:19:34,250 __init__ INFO Splash screen changed to 'Initalizing data acquisition devices...'
+2018-02-09 17:19:34,250 __init__ DEBUG Timing loop is now running in seperate thread.
+2018-02-09 17:19:34,250 __init__ DEBUG Importing DAQ interface modules
+2018-02-09 17:19:34,253 __init__ DEBUG Starting daq device factories
+2018-02-09 17:19:34,263 __init__ DEBUG Finished daq start
+2018-02-09 17:19:34,266 __init__ INFO Splash screen changed to 'Starting event stream server...'
+2018-02-09 17:19:34,296 __init__ INFO Splash screen changed to 'Loading plugins...'
+2018-02-09 17:19:34,398 __init__ ERROR Failed to load plugin 'something'.
+Traceback (most recent call last):
+  File "c:\Program Files (x86)\Scimitar\Scimitar - light\plugins\__init__.py", line 49, in load
+    module = __import__('plugins.' + name.lower())
+ImportError: No module named something
+2018-02-09 17:19:34,401 __init__ ERROR Failed to load plugin 'EngineDyno'.
+Traceback (most recent call last):
+  File "c:\Program Files (x86)\Scimitar\Scimitar - light\plugins\__init__.py", line 49, in load
+    module = __import__('plugins.' + name.lower())
+ImportError: No module named enginedyno
+2018-02-09 17:19:34,437 __init__ INFO Splash screen changed to 'Loading main window...'
+2018-02-09 17:19:34,437 __init__ DEBUG About to import mainwindow
+2018-02-09 17:19:34,473 __init__ DEBUG Transaction added <WriteDOs object at 0xab4c620 (daq+transqueue+Transaction at 0x734b7d0)>
+2018-02-09 17:19:34,621 __init__ INFO Splash screen changed to 'Creating main window...'
+2018-02-09 17:19:34,621 __init__ DEBUG Instatiating MainWindow
+2018-02-09 17:19:34,663 __init__ DEBUG MRU connected to plugin 'OnroadPlume'
+2018-02-09 17:19:34,664 __init__ DEBUG MRU connected to plugin 'CFREngine'
+2018-02-09 17:19:34,664 __init__ DEBUG MRU connected to plugin 'RailTunnel'
+2018-02-09 17:19:34,665 __init__ DEBUG MRU connected to plugin 'Gas'
+2018-02-09 17:19:34,667 __init__ DEBUG MRU connected to plugin 'SmallEngine'
+2018-02-09 17:19:34,667 __init__ DEBUG MRU connected to plugin 'WindTunnel'
+2018-02-09 17:19:34,667 __init__ DEBUG MRU connected to plugin 'ChassisDyno'
+2018-02-09 17:19:34,668 __init__ DEBUG MRU connected to plugin 'DebugTools'
+2018-02-09 17:19:34,670 __init__ DEBUG MRU connected to plugin 'FuelEconomy'
+2018-02-09 17:19:34,673 __init__ DEBUG MRU connected to plugin 'Locomotive'
+2018-02-09 17:19:34,673 __init__ ERROR Failed to determine current locomotive.
+Traceback (most recent call last):
+  File "c:\Program Files (x86)\Scimitar\Scimitar - light\plugins\locomotive.py", line 79, in _update_sidebar_widget
+    current = self.get_current_loco()
+  File "c:\Program Files (x86)\Scimitar\Scimitar - light\plugins\locomotive.py", line 108, in get_current_loco
+    if hashlib.sha256(current_loco['current']).hexdigest() != current_loco['hash']:
+KeyError: 'current'
+2018-02-09 17:19:34,674 __init__ DEBUG MRU connected to plugin 'ContainerOnroad'
+2018-02-09 17:19:34,674 __init__ DEBUG Main window instantiated
+2018-02-09 17:19:34,674 __init__ DEBUG About to show main window...
+2018-02-09 17:19:34,700 __init__ DEBUG About to destroy splash screen...
+2018-02-09 17:19:34,706 __init__ DEBUG Attempting to release import lock.
+2018-02-09 17:19:34,707 __init__ DEBUG Entering gtk main loop...
+2018-02-09 17:19:51,066 __init__ DEBUG Processing autoform for 'daq.serial.arduinocanbus.configuration.serial_port.port'
+2018-02-09 17:19:51,073 __init__ DEBUG - Created <FormRow object at 0xabebaf8 (GtkHBox at 0x72b03c8)>
+2018-02-09 17:19:59,549 __init__ DEBUG Restarting daq.serial.arduinocanbus because port has changed to COM6.
+2018-02-09 17:31:16,709 __init__ DEBUG Processing autoform for 'can.configuration'
+2018-02-09 17:31:16,711 __init__ DEBUG Processing autoform for 'can.configuration.serial_port'
+2018-02-09 17:31:16,713 __init__ DEBUG Processing autoform for 'can.configuration.serial_port.port'
+2018-02-09 17:31:16,717 __init__ DEBUG - Created <FormRow object at 0xb2a83c8 (GtkHBox at 0x73fa318)>
+2018-02-09 17:31:16,719 __init__ DEBUG Processing autoform for 'can.configuration.serial_port.baudrate'
+2018-02-09 17:31:16,747 __init__ DEBUG - Created <FormRow object at 0xb2a8350 (GtkHBox at 0x72b0bb0)>
+2018-02-09 17:31:16,750 __init__ DEBUG Processing autoform for 'can.configuration.serial_port.data_bits'
+2018-02-09 17:31:16,753 __init__ DEBUG - Created <FormRow object at 0xb2a8468 (GtkHBox at 0x73fa2c0)>
+2018-02-09 17:31:16,755 __init__ DEBUG Processing autoform for 'can.configuration.serial_port.parity'
+2018-02-09 17:31:16,762 __init__ DEBUG - Created <FormRow object at 0xb2a8508 (GtkHBox at 0x73fa5d8)>
+2018-02-09 17:31:16,767 __init__ DEBUG Processing autoform for 'can.configuration.serial_port.stop_bits'
+2018-02-09 17:31:16,772 __init__ DEBUG - Created <FormRow object at 0xb2a8620 (GtkHBox at 0x73fa688)>
+2018-02-09 17:31:16,776 __init__ DEBUG Processing autoform for 'can.configuration.serial_port.software_handshaking'
+2018-02-09 17:31:16,780 __init__ DEBUG - Created <CheckboxField object at 0xb2a8558 (GtkHBox at 0x73fa6e0)>
+2018-02-09 17:31:16,783 __init__ DEBUG Processing autoform for 'can.configuration.serial_port.hardware_handshaking'
+2018-02-09 17:31:16,792 __init__ DEBUG - Created <CheckboxField object at 0xb2a8670 (GtkHBox at 0x73fa738)>
+2018-02-09 17:31:16,793 __init__ DEBUG - Created <ContainerFormField object at 0xb2a8238 (GtkVBox at 0x73fa000)>
+2018-02-09 17:31:16,796 __init__ DEBUG - Created <ContainerFormField object at 0xb29af58 (GtkVBox at 0x73fa058)>

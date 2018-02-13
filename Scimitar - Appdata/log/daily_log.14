@@ -1,0 +1,354 @@
+2017-07-05 11:31:59,580 main INFO ================= Welcome to Scimitar: Good luck. =================
+2017-07-05 11:31:59,584 main INFO Splash screen changed to 'Loading numeric functions...'
+2017-07-05 11:31:59,625 main INFO Splash screen changed to 'Checking versions of dependent components...'
+2017-07-05 11:31:59,625 main INFO Splash screen changed to 'Checking release version...'
+2017-07-05 11:31:59,625 main INFO Splash screen changed to 'Raising process priority...'
+2017-07-05 11:31:59,626 main INFO Splash screen changed to 'Supressing screensaver/sleep/hibernate...'
+2017-07-05 11:31:59,630 screensaver DEBUG Will be using generic freedesktop interface.
+2017-07-05 11:31:59,631 main INFO Splash screen changed to 'Creating network adapter monitor...'
+2017-07-05 11:31:59,643 networkadapterlist DEBUG Adding network: IPv4Network('192.168.1.130/24')
+2017-07-05 11:31:59,643 networkadapterlist DEBUG Adding network: IPv4Network('192.168.2.3/24')
+2017-07-05 11:31:59,655 main INFO Splash screen changed to 'Checking folders...'
+2017-07-05 11:31:59,656 main INFO Splash screen changed to 'Checking for data in need of recovery...'
+2017-07-05 11:31:59,679 main INFO Finished searching for unrecovered data.
+2017-07-05 11:31:59,680 main INFO Splash screen changed to 'Loading data structure library...'
+2017-07-05 11:31:59,680 main INFO Splash screen changed to 'Loading laboratory tree...'
+2017-07-05 11:31:59,813 xmlmarshal DEBUG Loaded tree in 130.3 milliseconds using expat
+2017-07-05 11:31:59,816 main INFO Splash screen changed to 'Loading data acquisition code...'
+2017-07-05 11:31:59,816 main INFO Splash screen changed to 'Loading data acquisition tree...'
+2017-07-05 11:32:00,336 xmlmarshal DEBUG Loaded tree in 518.1 milliseconds using expat
+2017-07-05 11:32:00,345 main INFO Splash screen changed to 'Starting timing thread...'
+2017-07-05 11:32:00,346 timingloop DEBUG Starting timing thread
+2017-07-05 11:32:00,346 timingloop DEBUG Return from start thread call
+2017-07-05 11:32:00,346 timingloop DEBUG Timing loop is now running in seperate thread.
+2017-07-05 11:32:00,346 main INFO Splash screen changed to 'Initalizing data acquisition devices...'
+2017-07-05 11:32:00,346 __init__ DEBUG Importing DAQ interface modules
+2017-07-05 11:32:00,346 __init__ DEBUG Starting daq device factories
+2017-07-05 11:32:00,347 weather DEBUG Cache for u'KMGW' last updated 154702 seconds ago.
+2017-07-05 11:32:00,348 __init__ DEBUG Finished daq start
+2017-07-05 11:32:00,348 main INFO Splash screen changed to 'Starting event stream server...'
+2017-07-05 11:32:00,352 main INFO Splash screen changed to 'Loading plugins...'
+2017-07-05 11:32:00,353 main INFO Splash screen changed to 'Loading main window...'
+2017-07-05 11:32:00,354 main DEBUG About to import mainwindow
+2017-07-05 11:32:00,436 main INFO Splash screen changed to 'Creating main window...'
+2017-07-05 11:32:00,436 main DEBUG Instatiating MainWindow
+2017-07-05 11:32:00,452 __init__ DEBUG MRU connected to plugin 'ChassisDyno'
+2017-07-05 11:32:00,452 __init__ DEBUG MRU connected to plugin 'Gas'
+2017-07-05 11:32:00,453 main DEBUG Main window instantiated
+2017-07-05 11:32:00,453 main DEBUG About to show main window...
+2017-07-05 11:32:00,467 main DEBUG About to destroy splash screen...
+2017-07-05 11:32:00,468 main DEBUG Attempting to release import lock.
+2017-07-05 11:32:00,468 icpcon DEBUG Transaction added <WriteDOs object at 0x7f595df64730 (daq+transqueue+Transaction at 0x7f5958005ce0)>
+2017-07-05 11:32:00,468 main DEBUG Entering gtk main loop...
+2017-07-05 11:32:00,477 weather INFO Starting weather fetch for u'KMGW'.
+2017-07-05 11:32:00,477 weather INFO Attempting fetch from u'http://w1.weather.gov/xml/current_obs/KMGW.xml'.
+2017-07-05 11:32:00,494 screensaver INFO Screensaver and sleep should now be inhibited.
+2017-07-05 11:32:00,533 sseserver DEBUG Created stream client ('127.0.0.1', 0) 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+2017-07-05 11:32:00,552 weather INFO Weather fetch to u'/home/engineer/.scimitar/cache/weather/KMGW.xml' succeeded.
+2017-07-05 11:32:00,559 weather DEBUG Weather fetch done for u'KMGW'.
+2017-07-05 11:32:00,560 weather DEBUG Cache for u'KMGW' last updated 0 seconds ago.
+2017-07-05 11:32:00,560 weather DEBUG Data for u'KMGW' is up to date, parsing.
+2017-07-05 11:32:00,565 weather DEBUG Parsed ok for u'KMGW'. Going back to sleep.
+2017-07-05 11:32:00,582 vulcan DEBUG Vehicle name is: 'LINCOLN 2017 3.7 5250'
+2017-07-05 11:32:00,607 vulcan DEBUG Road simulation data: ['XASMX', '1', '37.75', '1.2124', '0.04355', '2', '145.15', '1.887', '0.04453', '5325', '5250', 'S2VO']
+2017-07-05 11:32:00,752 icpcon DEBUG Response to set engineering mode: '01020000000601050277ff00'
+2017-07-05 11:32:00,854 icpcon DEBUG Response to set open tc detection: '01020000000601050279ff00'
+2017-07-05 11:32:00,955 icpcon DEBUG Recieved model number: 7019
+2017-07-05 11:32:01,048 icpcon DEBUG Recieved AI channel count: 10
+2017-07-05 11:32:01,148 icpcon DEBUG Recieved DO channel count: 6
+2017-07-05 11:32:01,249 icpcon DEBUG Recieved AO channel count: 0
+2017-07-05 11:32:01,553 icpcon DEBUG Response to enable calibration False: '0102000000060105033e0000'
+2017-07-05 11:32:01,948 icpcon WARNING ---------------- Sending values: [False, False, False, False, False, False]
+2017-07-05 11:32:01,948 icpcon DEBUG Clearing pending DO write
+2017-07-05 11:32:01,948 icpcon DEBUG Transaction added <WriteDOs object at 0x7f595c530f50 (daq+transqueue+Transaction at 0x4707920)>
+2017-07-05 11:32:02,050 icpcon WARNING ------------------- WRITE DO reply '\x01\x02\x00\x00\x00\x06\x01\x0f\x00\x00\x00\x06'
+2017-07-05 11:32:02,050 icpcon DEBUG Updating <DigitalOut do0:False> with False
+2017-07-05 11:32:02,050 icpcon DEBUG Updating <DigitalOut do1:False> with False
+2017-07-05 11:32:02,050 icpcon DEBUG Updating <DigitalOut do2:False> with False
+2017-07-05 11:32:02,050 icpcon DEBUG Updating <DigitalOut do3:True> with False
+2017-07-05 11:32:02,051 icpcon DEBUG Updating <DigitalOut do4:False> with False
+2017-07-05 11:32:02,051 icpcon DEBUG Updating <DigitalOut do5:False> with False
+2017-07-05 11:32:02,051 icpcon WARNING ---------------- Sending values: [False, False, False, False, False, False]
+2017-07-05 11:32:02,051 icpcon DEBUG Clearing pending DO write
+2017-07-05 11:32:02,152 icpcon WARNING ------------------- WRITE DO reply '\x01\x02\x00\x00\x00\x06\x01\x0f\x00\x00\x00\x06'
+2017-07-05 11:32:02,152 icpcon DEBUG Updating <DigitalOut do0:False> with False
+2017-07-05 11:32:02,153 icpcon DEBUG Updating <DigitalOut do1:False> with False
+2017-07-05 11:32:02,153 icpcon DEBUG Updating <DigitalOut do2:False> with False
+2017-07-05 11:32:02,153 icpcon DEBUG Updating <DigitalOut do3:False> with False
+2017-07-05 11:32:02,153 icpcon DEBUG Updating <DigitalOut do4:False> with False
+2017-07-05 11:32:02,153 icpcon DEBUG Updating <DigitalOut do5:False> with False
+2017-07-05 11:32:03,156 sseserver DEBUG Created stream client ('127.0.0.1', 0) 'Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4'
+2017-07-05 11:32:06,349 capture DEBUG Recursive lock established as follows: <RecursiveLock On:<Lab 'lab'> Reason:<parameter.lock.Reason 'chassis dyno test'>>
+2017-07-05 11:32:06,380 container INFO Serializing tree...
+2017-07-05 11:32:06,472 container INFO Writing to '/home/engineer/.scimitar/data/149926872634/lab.xml'
+2017-07-05 11:32:06,474 container INFO Serializing tree...
+2017-07-05 11:32:06,736 container INFO Writing to '/home/engineer/.scimitar/data/149926872634/daq.xml'
+2017-07-05 11:32:06,737 test DEBUG Connecting to start-segment
+2017-07-05 11:32:06,757 test DEBUG Number of PM filters not declared for <ChassisTest object at 0x7f5946fd70a0 (tab+capture+Capture at 0x2f5dd50)>. No PM setup will be performed.
+2017-07-05 11:32:06,983 test INFO Wizard pages:
+2017-07-05 11:32:06,984 test INFO   <CheckParameterPresence object at 0x7f5964309c30 (widget+wizard+Page at 0x2f5dcc0)>
+2017-07-05 11:32:06,984 test INFO   <Setup object at 0x7f5946f27730 (widget+wizard+Page at 0x46c7f30)>
+2017-07-05 11:32:06,984 test INFO   <SetupCycle object at 0x7f595c060a50 (widget+wizard+Page at 0x4a0aab0)>
+2017-07-05 11:32:06,984 test INFO   <CommandAllAnalyzers object at 0x7f5946ccec30 (widget+wizard+Page at 0x4c8f250)>
+2017-07-05 11:32:06,984 test INFO   <BaggingDump object at 0x7f5946cced20 (widget+wizard+Page at 0x4c8f2e0)>
+2017-07-05 11:32:06,984 test INFO   <SetBagTimes object at 0x7f5946ccee60 (widget+wizard+Page at 0x4c8f370)>
+2017-07-05 11:32:06,984 test INFO   <TakeCycle object at 0x7f5946ccefa0 (widget+wizard+Page at 0x4c8f400)>
+2017-07-05 11:32:06,984 test INFO   <TakeBag object at 0x7f5946e4d910 (widget+wizard+Page at 0x4c8f490)>
+2017-07-05 11:32:06,984 test INFO   <TakeBag object at 0x7f5946e4d960 (widget+wizard+Page at 0x4cb4160)>
+2017-07-05 11:32:06,984 test INFO   <CommandAllAnalyzers object at 0x7f595ca19e60 (widget+wizard+Page at 0x4cb4430)>
+2017-07-05 11:32:06,984 test INFO   <TakeZeroSpan object at 0x7f5946e49f00 (widget+wizard+Page at 0x4cb44c0)>
+2017-07-05 11:32:06,984 test INFO   <Finish object at 0x7f5946e672d0 (widget+wizard+Page at 0x4a461f0)>
+2017-07-05 11:33:42,899 test DEBUG Entered Command All Analyzers 'Measure'
+2017-07-05 11:33:42,899 test DEBUG daq.horibamexa.mexa.ana.line1.ana0101 daq.horibamexa.mexa.ana.line1.status is Pause
+2017-07-05 11:33:42,900 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0101 daq.horibamexa.mexaone.ana.line1.status is Pause
+2017-07-05 11:33:42,900 test DEBUG daq.horibamexa.mexa.ana.line1.ana0103 daq.horibamexa.mexa.ana.line1.status is Pause
+2017-07-05 11:33:42,900 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0103 daq.horibamexa.mexaone.ana.line1.status is Pause
+2017-07-05 11:33:42,900 test DEBUG daq.horibamexa.mexa.ana.line1.ana0105 daq.horibamexa.mexa.ana.line1.status is Pause
+2017-07-05 11:33:42,900 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0107 daq.horibamexa.mexaone.ana.line1.status is Pause
+2017-07-05 11:33:42,900 test DEBUG daq.horibamexa.mexa.ana.line1.ana0104 daq.horibamexa.mexa.ana.line1.status is Pause
+2017-07-05 11:33:42,900 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0104 daq.horibamexa.mexaone.ana.line1.status is Pause
+2017-07-05 11:33:42,900 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0105 daq.horibamexa.mexaone.ana.line1.status is Pause
+2017-07-05 11:33:42,900 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0106 daq.horibamexa.mexaone.ana.line1.status is Pause
+2017-07-05 11:33:42,900 test ERROR Failed to find DAQ tree analyzer.
+Traceback (most recent call last):
+  File "/home/engineer/Scimitar/tab/chassisdyno/test.py", line 671, in enter
+    daq_channel = ana.source._bound_node
+AttributeError: 'ContainerParameter' object has no attribute 'source'
+2017-07-05 11:33:43,101 test DEBUG daq.horibamexa.mexa.ana.line1.ana0101 daq.horibamexa.mexa.ana.line1.ana0101.status is Pause
+2017-07-05 11:33:43,101 test DEBUG State is wrong, will keep checking.
+2017-07-05 11:33:43,302 test DEBUG daq.horibamexa.mexa.ana.line1.ana0101 daq.horibamexa.mexa.ana.line1.ana0101.status is Pause
+2017-07-05 11:33:43,302 test DEBUG State is wrong, will keep checking.
+2017-07-05 11:33:43,502 test DEBUG daq.horibamexa.mexa.ana.line1.ana0101 daq.horibamexa.mexa.ana.line1.ana0101.status is Pause
+2017-07-05 11:33:43,503 test DEBUG State is wrong, will keep checking.
+2017-07-05 11:33:43,703 test DEBUG daq.horibamexa.mexa.ana.line1.ana0101 daq.horibamexa.mexa.ana.line1.ana0101.status is Pause
+2017-07-05 11:33:43,703 test DEBUG State is wrong, will keep checking.
+2017-07-05 11:33:43,904 test DEBUG daq.horibamexa.mexa.ana.line1.ana0101 daq.horibamexa.mexa.ana.line1.ana0101.status is Pause
+2017-07-05 11:33:43,904 test DEBUG State is wrong, will keep checking.
+2017-07-05 11:33:44,104 test DEBUG daq.horibamexa.mexa.ana.line1.ana0101 daq.horibamexa.mexa.ana.line1.ana0101.status is Pause
+2017-07-05 11:33:44,104 test DEBUG State is wrong, will keep checking.
+2017-07-05 11:33:44,305 test DEBUG daq.horibamexa.mexa.ana.line1.ana0101 daq.horibamexa.mexa.ana.line1.ana0101.status is Pause
+2017-07-05 11:33:44,305 test DEBUG State is wrong, will keep checking.
+2017-07-05 11:33:44,506 test DEBUG daq.horibamexa.mexa.ana.line1.ana0101 daq.horibamexa.mexa.ana.line1.ana0101.status is Pause
+2017-07-05 11:33:44,506 test DEBUG State is wrong, will keep checking.
+2017-07-05 11:33:44,707 test DEBUG daq.horibamexa.mexa.ana.line1.ana0101 daq.horibamexa.mexa.ana.line1.ana0101.status is Pause
+2017-07-05 11:33:44,707 test DEBUG State is wrong, will keep checking.
+2017-07-05 11:33:44,908 test DEBUG daq.horibamexa.mexa.ana.line1.ana0101 daq.horibamexa.mexa.ana.line1.ana0101.status is Pause
+2017-07-05 11:33:44,908 test DEBUG State is wrong, will keep checking.
+2017-07-05 11:33:45,109 test DEBUG daq.horibamexa.mexa.ana.line1.ana0101 daq.horibamexa.mexa.ana.line1.ana0101.status is Pause
+2017-07-05 11:33:45,109 test DEBUG State is wrong, will keep checking.
+2017-07-05 11:33:45,245 test DEBUG Bag empty status [True, True, True, True]
+2017-07-05 11:33:45,346 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,0,0,1,1,0\r\n'>
+2017-07-05 11:33:45,346 cvs DEBUG Bagging operation object None
+2017-07-05 11:33:45,346 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,0,0,2,1,0\r\n'>
+2017-07-05 11:33:45,346 cvs DEBUG Bagging operation object None
+2017-07-05 11:33:45,346 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,0,0,3,1,0\r\n'>
+2017-07-05 11:33:45,346 cvs DEBUG Bagging operation object None
+2017-07-05 11:33:45,346 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,0,0,4,1,0\r\n'>
+2017-07-05 11:33:45,346 cvs DEBUG Bagging operation object None
+2017-07-05 11:33:46,347 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,3,1,1,2,1,0,1,0\r\n'>
+2017-07-05 11:33:46,347 cvs DEBUG Bagging operation object <BagOperation object at 0x7f595ca4bcd0 (util+operation+Abortable at 0x4a8f8c0)>
+2017-07-05 11:33:52,251 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,2,0,1,1,0\r\n'>
+2017-07-05 11:33:52,251 cvs DEBUG Bagging operation object None
+2017-07-05 11:33:52,251 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,2,0,2,1,0\r\n'>
+2017-07-05 11:33:52,251 cvs DEBUG Bagging operation object None
+2017-07-05 11:33:52,251 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,2,0,3,1,0\r\n'>
+2017-07-05 11:33:52,251 cvs DEBUG Bagging operation object None
+2017-07-05 11:33:52,251 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,2,0,4,1,0\r\n'>
+2017-07-05 11:33:52,251 cvs DEBUG Bagging operation object None
+2017-07-05 11:33:53,009 cvs_bag DEBUG Sequence end 'SEND,00,01,02'
+2017-07-05 11:33:53,254 test INFO Bag time verfied 'daq.horibamexa.cvs.bag.pair1' = 47
+2017-07-05 11:33:53,257 vulcan DEBUG Requerying dyno info because test is starting.
+2017-07-05 11:33:53,304 vulcan DEBUG Vehicle name is: 'LINCOLN 2017 3.7 5250'
+2017-07-05 11:33:53,330 vulcan DEBUG Road simulation data: ['XASMX', '1', '37.75', '1.2124', '0.04355', '2', '145.15', '1.887', '0.04453', '5325', '5250', 'S2VO']
+2017-07-05 11:33:54,588 test ERROR Failed to enable dyno.
+Traceback (most recent call last):
+  File "/home/engineer/Scimitar/tab/chassisdyno/test.py", line 439, in _start_click
+    lab.lab.dyno.enable.value = True
+AttributeError: 'ContainerParameter' object has no attribute 'enable'
+2017-07-05 11:33:54,588 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,4,1,1,1,0\r\n'>
+2017-07-05 11:33:54,588 cvs DEBUG Bagging operation object None
+2017-07-05 11:33:54,588 test WARNING Gradient will not be honored because gradient cycle and speed cycle were not loaded concurrently.
+2017-07-05 11:33:54,589 test DEBUG Mode started <Test object at 0x7f595c0c0410 (activity+ActivityWriter at 0x49d6b40)> Segment('sample',None,3013,None)
+2017-07-05 11:33:55,089 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,3,1,0,1,0\r\n'>
+2017-07-05 11:33:55,089 cvs DEBUG Bagging operation object None
+2017-07-05 11:34:41,651 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,0,0,1,1,0\r\n'>
+2017-07-05 11:34:41,651 cvs DEBUG Bagging operation object None
+2017-07-05 11:34:41,651 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,0,0,2,1,0\r\n'>
+2017-07-05 11:34:41,651 cvs DEBUG Bagging operation object None
+2017-07-05 11:34:41,651 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,0,0,3,1,0\r\n'>
+2017-07-05 11:34:41,651 cvs DEBUG Bagging operation object None
+2017-07-05 11:34:41,651 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,0,0,4,1,0\r\n'>
+2017-07-05 11:34:41,651 cvs DEBUG Bagging operation object None
+2017-07-05 11:34:41,651 test INFO Segment None is now complete.
+2017-07-05 11:34:42,153 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,3,1,0,1,0\r\n'>
+2017-07-05 11:34:42,153 cvs DEBUG Bagging operation object None
+2017-07-05 11:34:43,001 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,5,1,1,1,1\r\n'>
+2017-07-05 11:34:43,001 cvs DEBUG Bagging operation object None
+2017-07-05 11:34:45,661 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,5,1,1,1,2\r\n'>
+2017-07-05 11:34:45,661 cvs DEBUG Bagging operation object None
+2017-07-05 11:34:46,664 test DEBUG Entered Command All Analyzers 'Standby'
+2017-07-05 11:34:46,664 test DEBUG daq.horibamexa.mexa.ana.line1.ana0101 daq.horibamexa.mexa.ana.line1.status is Pause
+2017-07-05 11:34:46,664 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0101 daq.horibamexa.mexaone.ana.line1.status is Pause
+2017-07-05 11:34:46,665 test DEBUG daq.horibamexa.mexa.ana.line1.ana0103 daq.horibamexa.mexa.ana.line1.status is Pause
+2017-07-05 11:34:46,665 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0103 daq.horibamexa.mexaone.ana.line1.status is Pause
+2017-07-05 11:34:46,665 test DEBUG daq.horibamexa.mexa.ana.line1.ana0105 daq.horibamexa.mexa.ana.line1.status is Pause
+2017-07-05 11:34:46,665 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0107 daq.horibamexa.mexaone.ana.line1.status is Pause
+2017-07-05 11:34:46,665 test DEBUG daq.horibamexa.mexa.ana.line1.ana0104 daq.horibamexa.mexa.ana.line1.status is Pause
+2017-07-05 11:34:46,665 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0104 daq.horibamexa.mexaone.ana.line1.status is Pause
+2017-07-05 11:34:46,665 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0105 daq.horibamexa.mexaone.ana.line1.status is Pause
+2017-07-05 11:34:46,665 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0106 daq.horibamexa.mexaone.ana.line1.status is Pause
+2017-07-05 11:34:46,665 test ERROR Failed to find DAQ tree analyzer.
+Traceback (most recent call last):
+  File "/home/engineer/Scimitar/tab/chassisdyno/test.py", line 671, in enter
+    daq_channel = ana.source._bound_node
+AttributeError: 'ContainerParameter' object has no attribute 'source'
+2017-07-05 11:34:46,866 test DEBUG daq.horibamexa.mexa.ana.line1.ana0101 daq.horibamexa.mexa.ana.line1.ana0101.status is Pause
+2017-07-05 11:34:46,866 test DEBUG State is wrong, will keep checking.
+2017-07-05 11:34:47,066 test DEBUG daq.horibamexa.mexa.ana.line1.ana0101 daq.horibamexa.mexa.ana.line1.ana0101.status is Pause
+2017-07-05 11:34:47,066 test DEBUG State is wrong, will keep checking.
+2017-07-05 11:34:47,267 test DEBUG daq.horibamexa.mexa.ana.line1.ana0101 daq.horibamexa.mexa.ana.line1.ana0101.status is Pause
+2017-07-05 11:34:47,267 test DEBUG State is wrong, will keep checking.
+2017-07-05 11:34:47,467 test DEBUG daq.horibamexa.mexa.ana.line1.ana0101 daq.horibamexa.mexa.ana.line1.ana0101.status is Pause
+2017-07-05 11:34:47,467 test DEBUG State is wrong, will keep checking.
+2017-07-05 11:34:47,667 test DEBUG daq.horibamexa.mexa.ana.line1.ana0101 daq.horibamexa.mexa.ana.line1.ana0101.status is Standby
+2017-07-05 11:34:47,668 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0101 daq.horibamexa.mexaone.ana.line1.ana0101.status is Standby
+2017-07-05 11:34:47,668 test DEBUG daq.horibamexa.mexa.ana.line1.ana0103 daq.horibamexa.mexa.ana.line1.ana0103.status is Standby
+2017-07-05 11:34:47,668 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0103 daq.horibamexa.mexaone.ana.line1.ana0103.status is Standby
+2017-07-05 11:34:47,668 test DEBUG daq.horibamexa.mexa.ana.line1.ana0105 daq.horibamexa.mexa.ana.line1.ana0105.status is Standby
+2017-07-05 11:34:47,668 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0107 daq.horibamexa.mexaone.ana.line1.ana0107.status is Standby
+2017-07-05 11:34:47,668 test DEBUG daq.horibamexa.mexa.ana.line1.ana0104 daq.horibamexa.mexa.ana.line1.ana0104.status is Standby
+2017-07-05 11:34:47,668 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0104 daq.horibamexa.mexaone.ana.line1.ana0104.status is Standby
+2017-07-05 11:34:47,668 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0105 daq.horibamexa.mexaone.ana.line1.ana0105.status is Standby
+2017-07-05 11:34:47,668 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0106 daq.horibamexa.mexaone.ana.line1.ana0106.status is Standby
+2017-07-05 11:35:05,591 horibamexa ERROR Line handler for 'MRAT' failed.
+Traceback (most recent call last):
+  File "/home/engineer/Scimitar/daq/horibamexa/horibamexa.py", line 192, in _handle_keyed_reply
+    trans.handle_response(self,line)
+  File "/home/engineer/Scimitar/daq/horibamexa/protocol.py", line 85, in handle_response
+    self.handle_data(mexa)
+  File "/home/engineer/Scimitar/daq/horibamexa/protocol.py", line 333, in handle_data
+    to_cancel.remove(thisalarm)
+KeyError: <Alarm:MexaSystemAlarm 'Unknown Mexa alarm. Consult Mexa MCU.' Inactive Unacknowledged>
+2017-07-05 11:37:14,992 activity DEBUG Saving test id.
+2017-07-05 11:37:14,993 activity DEBUG Saving metafiles.
+2017-07-05 11:37:14,993 container INFO Serializing tree...
+2017-07-05 11:37:15,091 container INFO Writing to '/home/engineer/.scimitar/data/149926872634/lab.xml'
+2017-07-05 11:37:15,091 container INFO Serializing tree...
+2017-07-05 11:37:15,324 container INFO Writing to '/home/engineer/.scimitar/data/149926872634/daq.xml'
+2017-07-05 11:37:15,325 activity DEBUG Running package operation.
+2017-07-05 11:37:15,325 activity DEBUG Attempting to package activity.
+2017-07-05 11:37:15,325 activity DEBUG Filename will be '/home/engineer/labdata/activity/discarded/20170705_113715.tz'
+2017-07-05 11:37:15,356 activity DEBUG '/home/engineer/labdata/activity/discarded/20170705_113715.tz' has been closed.
+2017-07-05 11:37:15,356 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/.RECOVERY_INFO/segments'
+2017-07-05 11:37:15,356 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/.RECOVERY_INFO/started'
+2017-07-05 11:37:15,356 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/.RECOVERY_INFO/state'
+2017-07-05 11:37:15,356 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.ftir.nh3_3000'
+2017-07-05 11:37:15,356 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.vehicle.force'
+2017-07-05 11:37:15,356 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.vehicle.engine.intake.vflow.temp'
+2017-07-05 11:37:15,356 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.dyno.temperature.front.temp1'
+2017-07-05 11:37:15,356 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.ambient.pressure.from_weather.sea_level_pressure'
+2017-07-05 11:37:15,356 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.dnph.enable'
+2017-07-05 11:37:15,356 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.ambient.pressure.from_weather'
+2017-07-05 11:37:15,356 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.gas.ch4'
+2017-07-05 11:37:15,356 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.pm.flow.dilution'
+2017-07-05 11:37:15,356 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.gas.temperature.continuous.filter'
+2017-07-05 11:37:15,356 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.variable_speed_fan.fan_speed.output'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.gas.nox_cont.temperature.pump'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.gas.thc.temperature.pump'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.dnph.flow'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.variable_speed_fan.enable'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.gas.nox_cont.temperature.line'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.ftir.actylene'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.ftir.no'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.ftir.ethylene'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.dyno.temperature.rear.temp1'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.gas.hc_mexa'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.ftir.ch4_250'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.gas.nox_cont'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.ftir.no2_150'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.ambient.temperature'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.vehicle.engine.exhaust.cpc.flow'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.dilution.enable'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.pm.filter.filter3.enable'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.ftir.formaldehyde'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.ftir.co2'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.dilution.vmix'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.dyno.gradient'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.ambient.pressure'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.ftir.nh3_300'
+2017-07-05 11:37:15,357 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.ftir.ethane'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.soot.avlmsspost.dil_ratio'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.soot.avlmsspre.soot_conc_raw'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.dilution.blower.flowrate'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.soot.avlmsspre.dil_ratio'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.dyno.force'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.dilution_air_pegasor.setpoint'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.gas.co'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.ftir.temp'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.gas.co_cont'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.eeps_total_conc'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.ftir.pressure'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.vehicle.engine.intake.pressure'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.pm.filter.filter2.enable'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.vehicle.engine.speed'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.dilution_air_pegasor'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.ftir.propylene'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.ftir.no2_2000'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.ftir.diesel_c1'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.vehicle.engine.exhaust.temperature'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.ftir.ch4_3000'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.gas.co2_cont'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.pm.flow.total'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.gas.co2'
+2017-07-05 11:37:15,358 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.vehicle.engine.exhaust.cpc.particle_count'
+2017-07-05 11:37:15,359 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.gas.thc'
+2017-07-05 11:37:15,359 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.vehicle.engine.intake.vflow.ap'
+2017-07-05 11:37:15,359 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.vehicle.engine.coolant.temperature'
+2017-07-05 11:37:15,359 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.vehicle.engine.intake.flow'
+2017-07-05 11:37:15,359 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.soot.avlmsspost.soot_conc_dil_corrected'
+2017-07-05 11:37:15,359 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.dyno.temperature.rear.temp2'
+2017-07-05 11:37:15,359 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.soot.avlmsspre.soot_conc_dil_corrected'
+2017-07-05 11:37:15,359 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.dyno.power'
+2017-07-05 11:37:15,359 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.pm.flow.dilution.setpoint'
+2017-07-05 11:37:15,359 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.pm.filter.filter1.enable'
+2017-07-05 11:37:15,359 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.dyno.temperature.front.temp2'
+2017-07-05 11:37:15,359 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.vehicle.speed.setpoint'
+2017-07-05 11:37:15,359 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.gas.nox'
+2017-07-05 11:37:15,359 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.pm.temperature.box'
+2017-07-05 11:37:15,359 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.dilution.blower.flowrate.setpoint'
+2017-07-05 11:37:15,359 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.ambient.dewpoint'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.soot.avlmsspost.soot_conc_raw'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.variable_speed_fan.fan_speed'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.vehicle.engine.mil'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.gas.temperature.continuous.probe'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.vehicle.engine.intake.vflow'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.ambient.pressure.from_dewtrak'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.ftir.n20'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.gas.nmhc'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.ftir.co_10000'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.ftir.hnco'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.pm.flow.total.setpoint'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.gas.thc.temperature.line'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.vehicle.engine.intake.vflow.dp'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.vehicle.speed'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.pm.temperature.filter_face'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/timeseries/lab.emission.pm.bypass.enable'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/alarms.csv'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/daq.xml'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary file '/home/engineer/.scimitar/data/149926872634/lab.xml'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary directory '/home/engineer/.scimitar/data/149926872634/.RECOVERY_INFO'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary directory '/home/engineer/.scimitar/data/149926872634/foreign'
+2017-07-05 11:37:15,360 activity DEBUG Deleting temporary directory '/home/engineer/.scimitar/data/149926872634/timeseries'
+2017-07-05 11:37:15,360 activity DEBUG Removing capture directory '/home/engineer/.scimitar/data/149926872634'
+2017-07-05 11:37:15,382 main DEBUG setting HTTP server stop flag
+2017-07-05 11:37:15,382 sseserver INFO Got shutdown signal.
+2017-07-05 11:37:15,489 sseserver INFO Shutdown complete.
+2017-07-05 11:37:15,489 main DEBUG setting central timer stop flag
+2017-07-05 11:37:15,489 timingloop DEBUG Timing loop stop requested.
+2017-07-05 11:37:15,489 main DEBUG Waiting for termination of central timer thread
+2017-07-05 11:37:15,491 timingloop DEBUG Timing loop terminated.
+2017-07-05 11:37:15,491 main DEBUG releasing gdk lock
+2017-07-05 11:37:15,491 main DEBUG unsupressing screensaver/powersave
+2017-07-05 11:37:15,492 screensaver INFO Screensaver and sleep should no longer be inhibited.
+2017-07-05 11:37:15,492 main DEBUG releasing single instance lock
+2017-07-05 11:37:15,492 main INFO ================= Sucessful program shutdown. =================

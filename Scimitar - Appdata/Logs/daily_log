@@ -1,0 +1,83 @@
+2018-02-12 09:58:00,950 __init__ INFO ================= Welcome to Scimitar: Good luck. =================
+2018-02-12 09:58:00,951 __init__ INFO Splash screen changed to 'Loading numeric functions...'
+2018-02-12 09:58:01,437 __init__ INFO Splash screen changed to 'Checking versions of dependent components...'
+2018-02-12 09:58:01,440 __init__ INFO Splash screen changed to 'Checking release version...'
+2018-02-12 09:58:01,448 __init__ INFO Splash screen changed to 'Raising process priority...'
+2018-02-12 09:58:01,459 __init__ INFO Splash screen changed to 'Supressing screensaver/sleep/hibernate...'
+2018-02-12 09:58:01,473 __init__ INFO Splash screen changed to 'Creating network adapter monitor...'
+2018-02-12 09:58:01,523 __init__ DEBUG Adding network: IPv4Network('192.168.1.239/24')
+2018-02-12 09:58:01,526 __init__ INFO Splash screen changed to 'Checking folders...'
+2018-02-12 09:58:01,526 __init__ INFO Splash screen changed to 'Checking for data in need of recovery...'
+2018-02-12 09:58:01,821 __init__ INFO Finished searching for unrecovered data.
+2018-02-12 09:58:01,825 __init__ INFO Splash screen changed to 'Loading data structure library...'
+2018-02-12 09:58:01,826 __init__ INFO Splash screen changed to 'Loading laboratory tree...'
+2018-02-12 09:58:02,497 __init__ DEBUG Loaded tree in 660.3 milliseconds using expat
+2018-02-12 09:58:02,503 __init__ INFO Splash screen changed to 'Loading data acquisition code...'
+2018-02-12 09:58:02,505 __init__ INFO Splash screen changed to 'Loading data acquisition tree...'
+2018-02-12 09:58:02,625 __init__ DEBUG Serial win32 monkey patch (new method) ok
+2018-02-12 09:58:02,642 __init__ DEBUG Serial win32 monkey patch (new method) ok
+2018-02-12 09:58:03,394 __init__ DEBUG Loaded tree in 881.7 milliseconds using expat
+2018-02-12 09:58:03,398 __init__ INFO Splash screen changed to 'Starting timing thread...'
+2018-02-12 09:58:03,401 __init__ INFO Splash screen changed to 'Initalizing data acquisition devices...'
+2018-02-12 09:58:03,401 __init__ DEBUG Timing loop is now running in seperate thread.
+2018-02-12 09:58:03,401 __init__ DEBUG Importing DAQ interface modules
+2018-02-12 09:58:03,404 __init__ DEBUG Starting daq device factories
+2018-02-12 09:58:03,415 __init__ DEBUG Finished daq start
+2018-02-12 09:58:03,417 __init__ INFO Splash screen changed to 'Starting event stream server...'
+2018-02-12 09:58:03,453 __init__ INFO Splash screen changed to 'Loading plugins...'
+2018-02-12 09:58:03,548 __init__ DEBUG Transaction added <WriteDOs object at 0xaeb9440 (daq+transqueue+Transaction at 0x76e07d0)>
+2018-02-12 09:58:03,555 __init__ ERROR Failed to load plugin 'something'.
+Traceback (most recent call last):
+  File "c:\Program Files (x86)\Scimitar\Scimitar - light\plugins\__init__.py", line 49, in load
+    module = __import__('plugins.' + name.lower())
+ImportError: No module named something
+2018-02-12 09:58:03,559 __init__ ERROR Failed to load plugin 'EngineDyno'.
+Traceback (most recent call last):
+  File "c:\Program Files (x86)\Scimitar\Scimitar - light\plugins\__init__.py", line 49, in load
+    module = __import__('plugins.' + name.lower())
+ImportError: No module named enginedyno
+2018-02-12 09:58:03,598 __init__ INFO Splash screen changed to 'Loading main window...'
+2018-02-12 09:58:03,598 __init__ DEBUG About to import mainwindow
+2018-02-12 09:58:03,739 __init__ INFO Splash screen changed to 'Creating main window...'
+2018-02-12 09:58:03,740 __init__ DEBUG Instatiating MainWindow
+2018-02-12 09:58:03,776 __init__ DEBUG MRU connected to plugin 'OnroadPlume'
+2018-02-12 09:58:03,776 __init__ DEBUG MRU connected to plugin 'CFREngine'
+2018-02-12 09:58:03,778 __init__ DEBUG MRU connected to plugin 'RailTunnel'
+2018-02-12 09:58:03,779 __init__ DEBUG MRU connected to plugin 'Gas'
+2018-02-12 09:58:03,779 __init__ DEBUG MRU connected to plugin 'SmallEngine'
+2018-02-12 09:58:03,779 __init__ DEBUG MRU connected to plugin 'WindTunnel'
+2018-02-12 09:58:03,782 __init__ DEBUG MRU connected to plugin 'ChassisDyno'
+2018-02-12 09:58:03,782 __init__ DEBUG MRU connected to plugin 'DebugTools'
+2018-02-12 09:58:03,783 __init__ DEBUG MRU connected to plugin 'FuelEconomy'
+2018-02-12 09:58:03,783 __init__ DEBUG MRU connected to plugin 'Locomotive'
+2018-02-12 09:58:03,785 __init__ ERROR Failed to determine current locomotive.
+Traceback (most recent call last):
+  File "c:\Program Files (x86)\Scimitar\Scimitar - light\plugins\locomotive.py", line 79, in _update_sidebar_widget
+    current = self.get_current_loco()
+  File "c:\Program Files (x86)\Scimitar\Scimitar - light\plugins\locomotive.py", line 108, in get_current_loco
+    if hashlib.sha256(current_loco['current']).hexdigest() != current_loco['hash']:
+KeyError: 'current'
+2018-02-12 09:58:03,786 __init__ DEBUG MRU connected to plugin 'ContainerOnroad'
+2018-02-12 09:58:03,786 __init__ DEBUG Main window instantiated
+2018-02-12 09:58:03,786 __init__ DEBUG About to show main window...
+2018-02-12 09:58:03,811 __init__ DEBUG About to destroy splash screen...
+2018-02-12 09:58:03,815 __init__ DEBUG Attempting to release import lock.
+2018-02-12 09:58:03,815 __init__ DEBUG Entering gtk main loop...
+2018-02-12 09:58:04,885 __init__ DEBUG setting HTTP server stop flag
+2018-02-12 09:58:04,887 __init__ INFO Got shutdown signal.
+2018-02-12 09:58:04,953 __init__ ERROR Failed to shutdown http server.
+Traceback (most recent call last):
+  File ".\Scimitar - light\main.py", line 601, in main
+    http_server.shutdown()
+  File "c:\Program Files (x86)\Scimitar\Scimitar - light\util\sseserver.py", line 40, in shutdown
+    self.socket.shutdown(socket.SHUT_RDWR)
+  File "./socket.py", line 224, in meth
+error: [Errno 10057] A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2018-02-12 09:58:04,956 __init__ DEBUG setting central timer stop flag
+2018-02-12 09:58:04,957 __init__ DEBUG Timing loop stop requested.
+2018-02-12 09:58:04,959 __init__ DEBUG Waiting for termination of central timer thread
+2018-02-12 09:58:04,963 __init__ DEBUG Timing loop terminated.
+2018-02-12 09:58:04,963 __init__ DEBUG releasing gdk lock
+2018-02-12 09:58:04,967 __init__ DEBUG unsupressing screensaver/powersave
+2018-02-12 09:58:04,967 __init__ DEBUG releasing single instance lock
+2018-02-12 09:58:04,969 __init__ INFO ================= Sucessful program shutdown. =================

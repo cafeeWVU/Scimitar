@@ -1,0 +1,17 @@
+comment,THIS FILE IS NOT DESIGNED TO BE EDITED MANUALLY
+comment,This file stores the sidebar settings.
+sidebar_width,317
+sidebar_visible,0
+item,lab.emission.pm.bypass.enable
+item,lab.emission.pm.filter.filter1.enable
+item,lab.ambient.temperature
+item_property,minigraph-visible,False
+item,lab.emission.pm.flow.total
+item_property,minigraph-visible,False
+item,lab.vehicle.speed
+item_property,minigraph-visible,False
+item,lab.emission.gas.nox
+item_property,minigraph-visible,False
+item,lab.emission.gas.co2
+item_property,minigraph-visible,False
+item,lab.emission.dilution.enable

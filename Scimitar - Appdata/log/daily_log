@@ -1,0 +1,161 @@
+2017-07-07 11:52:33,158 main INFO ================= Welcome to Scimitar: Good luck. =================
+2017-07-07 11:52:33,163 main INFO Splash screen changed to 'Loading numeric functions...'
+2017-07-07 11:52:33,219 main INFO Splash screen changed to 'Checking versions of dependent components...'
+2017-07-07 11:52:33,219 main INFO Splash screen changed to 'Checking release version...'
+2017-07-07 11:52:33,219 main INFO Splash screen changed to 'Raising process priority...'
+2017-07-07 11:52:33,220 main INFO Splash screen changed to 'Supressing screensaver/sleep/hibernate...'
+2017-07-07 11:52:33,225 screensaver DEBUG Will be using generic freedesktop interface.
+2017-07-07 11:52:33,225 main INFO Splash screen changed to 'Creating network adapter monitor...'
+2017-07-07 11:52:33,233 networkadapterlist DEBUG Adding network: IPv4Network('192.168.1.130/24')
+2017-07-07 11:52:33,233 networkadapterlist DEBUG Adding network: IPv4Network('192.168.2.3/24')
+2017-07-07 11:52:33,246 main INFO Splash screen changed to 'Checking folders...'
+2017-07-07 11:52:33,246 main INFO Splash screen changed to 'Checking for data in need of recovery...'
+2017-07-07 11:52:33,270 main INFO Finished searching for unrecovered data.
+2017-07-07 11:52:33,271 main INFO Splash screen changed to 'Loading data structure library...'
+2017-07-07 11:52:33,271 main INFO Splash screen changed to 'Loading laboratory tree...'
+2017-07-07 11:52:33,405 xmlmarshal DEBUG Loaded tree in 131.3 milliseconds using expat
+2017-07-07 11:52:33,408 main INFO Splash screen changed to 'Loading data acquisition code...'
+2017-07-07 11:52:33,408 main INFO Splash screen changed to 'Loading data acquisition tree...'
+2017-07-07 11:52:33,933 xmlmarshal DEBUG Loaded tree in 523.8 milliseconds using expat
+2017-07-07 11:52:33,942 main INFO Splash screen changed to 'Starting timing thread...'
+2017-07-07 11:52:33,942 timingloop DEBUG Starting timing thread
+2017-07-07 11:52:33,943 timingloop DEBUG Return from start thread call
+2017-07-07 11:52:33,943 main INFO Splash screen changed to 'Initalizing data acquisition devices...'
+2017-07-07 11:52:33,943 __init__ DEBUG Importing DAQ interface modules
+2017-07-07 11:52:33,943 __init__ DEBUG Starting daq device factories
+2017-07-07 11:52:33,943 timingloop DEBUG Timing loop is now running in seperate thread.
+2017-07-07 11:52:33,944 weather DEBUG Cache for u'KMGW' last updated 1233 seconds ago.
+2017-07-07 11:52:33,944 weather DEBUG Data for u'KMGW' is up to date, parsing.
+2017-07-07 11:52:33,948 weather DEBUG Parsed ok for u'KMGW'. Going back to sleep.
+2017-07-07 11:52:33,949 __init__ DEBUG Finished daq start
+2017-07-07 11:52:33,950 main INFO Splash screen changed to 'Starting event stream server...'
+2017-07-07 11:52:33,954 main INFO Splash screen changed to 'Loading plugins...'
+2017-07-07 11:52:33,955 main INFO Splash screen changed to 'Loading main window...'
+2017-07-07 11:52:33,955 main DEBUG About to import mainwindow
+2017-07-07 11:52:34,036 main INFO Splash screen changed to 'Creating main window...'
+2017-07-07 11:52:34,036 main DEBUG Instatiating MainWindow
+2017-07-07 11:52:34,053 __init__ DEBUG MRU connected to plugin 'ChassisDyno'
+2017-07-07 11:52:34,053 __init__ DEBUG MRU connected to plugin 'Gas'
+2017-07-07 11:52:34,053 icpcon DEBUG Transaction added <WriteDOs object at 0x7f5b207db460 (daq+transqueue+Transaction at 0x3853a80)>
+2017-07-07 11:52:34,053 main DEBUG Main window instantiated
+2017-07-07 11:52:34,053 main DEBUG About to show main window...
+2017-07-07 11:52:34,068 main DEBUG About to destroy splash screen...
+2017-07-07 11:52:34,068 main DEBUG Attempting to release import lock.
+2017-07-07 11:52:34,068 main DEBUG Entering gtk main loop...
+2017-07-07 11:52:34,088 screensaver INFO Screensaver and sleep should now be inhibited.
+2017-07-07 11:52:34,171 vulcan DEBUG Vehicle name is: 'Chevy Silverado 2500 HD'
+2017-07-07 11:52:34,188 vulcan DEBUG Road simulation data: ['XASMX', '0', '95.56', '4.3933', '0.10662', '2', '259.38', '4.7942', '0.10899', '9638', '9500', 'S2HI']
+2017-07-07 11:52:34,350 icpcon DEBUG Response to set engineering mode: '01020000000601050277ff00'
+2017-07-07 11:52:34,350 icpcon DEBUG Response to set engineering mode: '01020000000601050277ff00'
+2017-07-07 11:52:34,451 icpcon DEBUG Response to set open tc detection: '01020000000601050279ff00'
+2017-07-07 11:52:34,451 icpcon DEBUG Response to set open tc detection: '01020000000601050279ff00'
+2017-07-07 11:52:34,551 icpcon DEBUG Recieved model number: 7026
+2017-07-07 11:52:34,551 icpcon DEBUG Recieved model number: 7019
+2017-07-07 11:52:34,644 icpcon DEBUG Recieved AI channel count: 6
+2017-07-07 11:52:34,645 icpcon DEBUG Recieved AI channel count: 10
+2017-07-07 11:52:34,668 sseserver DEBUG Created stream client ('127.0.0.1', 0) 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0'
+2017-07-07 11:52:34,746 icpcon DEBUG Recieved DO channel count: 2
+2017-07-07 11:52:34,746 icpcon DEBUG Recieved DO channel count: 6
+2017-07-07 11:52:34,848 icpcon DEBUG Recieved AO channel count: 2
+2017-07-07 11:52:34,848 icpcon DEBUG Recieved AO channel count: 0
+2017-07-07 11:52:35,145 icpcon DEBUG Response to enable calibration False: '0102000000060105033e0000'
+2017-07-07 11:52:35,145 icpcon DEBUG Response to enable calibration False: '0102000000060105033e0000'
+2017-07-07 11:52:35,552 icpcon WARNING ---------------- Sending values: [False, False, False, False, False, False]
+2017-07-07 11:52:35,552 icpcon DEBUG Clearing pending DO write
+2017-07-07 11:52:35,646 icpcon WARNING ------------------- WRITE DO reply '\x01\x02\x00\x00\x00\x06\x01\x0f\x00\x00\x00\x06'
+2017-07-07 11:52:35,646 icpcon DEBUG Updating <DigitalOut do0:False> with False
+2017-07-07 11:52:35,646 icpcon DEBUG Updating <DigitalOut do1:False> with False
+2017-07-07 11:52:35,646 icpcon DEBUG Updating <DigitalOut do2:False> with False
+2017-07-07 11:52:35,646 icpcon DEBUG Updating <DigitalOut do3:False> with False
+2017-07-07 11:52:35,646 icpcon DEBUG Updating <DigitalOut do4:False> with False
+2017-07-07 11:52:35,646 icpcon DEBUG Updating <DigitalOut do5:False> with False
+2017-07-07 11:52:35,840 sseserver DEBUG Created stream client ('127.0.0.1', 0) 'Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4'
+2017-07-07 11:52:35,966 sseserver DEBUG Created stream client ('127.0.0.1', 0) 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+2017-07-07 11:52:53,525 labtree DEBUG Editor does not support locking.
+2017-07-07 11:52:54,799 labtree DEBUG Editor does not support locking.
+2017-07-07 11:52:59,805 labtree DEBUG Editor does not support locking.
+2017-07-07 11:53:04,833 labtree DEBUG Editor does not support locking.
+2017-07-07 11:53:21,631 labtree DEBUG Editor does not support locking.
+2017-07-07 11:53:23,893 labtree DEBUG Editor does not support locking.
+2017-07-07 11:53:31,351 labtree DEBUG Editor does not support locking.
+2017-07-07 11:54:16,935 container INFO Serializing tree...
+2017-07-07 11:54:17,038 container INFO Writing to '/home/engineer/.scimitar/state/lab.xml'
+2017-07-07 11:54:17,039 container INFO Marking tree as clean.
+2017-07-07 11:54:17,048 parametertreeview DEBUG Calling shutdown model due to set_model.
+2017-07-07 11:54:17,051 parametertreeview DEBUG Calling shutdown model due to destroy.
+2017-07-07 11:54:44,433 container INFO Serializing tree...
+2017-07-07 11:54:44,701 container INFO Writing to '/home/engineer/.scimitar/state/daq.xml'
+2017-07-07 11:54:44,703 container INFO Marking tree as clean.
+2017-07-07 11:55:55,051 labtree DEBUG Editor does not support locking.
+2017-07-07 12:02:00,057 weather INFO Starting weather fetch for u'KMGW'.
+2017-07-07 12:02:00,057 weather INFO Attempting fetch from u'http://w1.weather.gov/xml/current_obs/KMGW.xml'.
+2017-07-07 12:02:00,124 weather INFO Weather fetch to u'/home/engineer/.scimitar/cache/weather/KMGW.xml' succeeded.
+2017-07-07 12:02:00,155 weather DEBUG Weather fetch done for u'KMGW'.
+2017-07-07 12:02:00,156 weather DEBUG Cache for u'KMGW' last updated 0 seconds ago.
+2017-07-07 12:02:00,156 weather DEBUG Data for u'KMGW' is up to date, parsing.
+2017-07-07 12:02:00,157 weather DEBUG Parsed ok for u'KMGW'. Going back to sleep.
+2017-07-07 12:03:54,977 container INFO Serializing tree...
+2017-07-07 12:03:55,057 container INFO Writing to '/home/engineer/.scimitar/state/lab.xml'
+2017-07-07 12:03:55,058 container INFO Marking tree as clean.
+2017-07-07 12:10:54,021 capture DEBUG Recursive lock established as follows: <RecursiveLock On:<Lab 'lab'> Reason:<parameter.lock.Reason 'chassis dyno test'>>
+2017-07-07 12:10:54,053 container INFO Doing file copy since tree is not dirty. Src: '/home/engineer/.scimitar/state/lab.xml' Dst: '/home/engineer/.scimitar/data/149944385402/lab.xml'
+2017-07-07 12:10:54,054 container INFO Serializing tree...
+2017-07-07 12:10:54,290 container INFO Writing to '/home/engineer/.scimitar/data/149944385402/daq.xml'
+2017-07-07 12:10:54,291 test DEBUG Connecting to start-segment
+2017-07-07 12:10:54,307 test DEBUG Number of PM filters not declared for <ChassisTest object at 0x7f5b19eb6d20 (tab+capture+Capture at 0x3ad13e0)>. No PM setup will be performed.
+2017-07-07 12:10:54,549 test INFO Wizard pages:
+2017-07-07 12:10:54,549 test INFO   <CheckParameterPresence object at 0x7f5b1a126b40 (widget+wizard+Page at 0x3ad1110)>
+2017-07-07 12:10:54,549 test INFO   <Setup object at 0x7f5b1a024f50 (widget+wizard+Page at 0x3ad11a0)>
+2017-07-07 12:10:54,549 test INFO   <SetupCycle object at 0x7f5b1a024e10 (widget+wizard+Page at 0x3ad1500)>
+2017-07-07 12:10:54,549 test INFO   <CommandAllAnalyzers object at 0x7f5b19edae10 (widget+wizard+Page at 0x3ed3ae0)>
+2017-07-07 12:10:54,549 test INFO   <BaggingDump object at 0x7f5afed523c0 (widget+wizard+Page at 0x3ed3b70)>
+2017-07-07 12:10:54,550 test INFO   <SetBagTimes object at 0x7f5afed524b0 (widget+wizard+Page at 0x3ed3c00)>
+2017-07-07 12:10:54,550 test INFO   <TakeCycle object at 0x7f5afed52550 (widget+wizard+Page at 0x3ed3c90)>
+2017-07-07 12:10:54,550 test INFO   <TakeBag object at 0x7f5b19f5d1e0 (widget+wizard+Page at 0x3eda040)>
+2017-07-07 12:10:54,550 test INFO   <TakeBag object at 0x7f5b19f5d500 (widget+wizard+Page at 0x3eda0d0)>
+2017-07-07 12:10:54,550 test INFO   <CommandAllAnalyzers object at 0x7f5b19f5df50 (widget+wizard+Page at 0x3eda3a0)>
+2017-07-07 12:10:54,550 test INFO   <TakeZeroSpan object at 0x7f5b19f59d70 (widget+wizard+Page at 0x3eda430)>
+2017-07-07 12:10:54,550 test INFO   <Finish object at 0x7f5b19f59fa0 (widget+wizard+Page at 0x448c280)>
+2017-07-07 12:11:26,457 test DEBUG Entered Command All Analyzers 'Measure'
+2017-07-07 12:11:26,458 test DEBUG daq.horibamexa.mexa.ana.line1.ana0101 daq.horibamexa.mexa.ana.line1.status is Measure
+2017-07-07 12:11:26,458 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0101 daq.horibamexa.mexaone.ana.line1.status is Measure
+2017-07-07 12:11:26,458 test DEBUG daq.horibamexa.mexa.ana.line1.ana0103 daq.horibamexa.mexa.ana.line1.status is Measure
+2017-07-07 12:11:26,458 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0103 daq.horibamexa.mexaone.ana.line1.status is Measure
+2017-07-07 12:11:26,458 test DEBUG daq.horibamexa.mexa.ana.line1.ana0105 daq.horibamexa.mexa.ana.line1.status is Measure
+2017-07-07 12:11:26,458 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0107 daq.horibamexa.mexaone.ana.line1.status is Measure
+2017-07-07 12:11:26,458 test DEBUG daq.horibamexa.mexa.ana.line1.ana0104 daq.horibamexa.mexa.ana.line1.status is Measure
+2017-07-07 12:11:26,458 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0104 daq.horibamexa.mexaone.ana.line1.status is Measure
+2017-07-07 12:11:26,458 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0105 daq.horibamexa.mexaone.ana.line1.status is Measure
+2017-07-07 12:11:26,458 test DEBUG daq.horibamexa.mexaone.ana.line1.ana0106 daq.horibamexa.mexaone.ana.line1.status is Measure
+2017-07-07 12:11:26,458 test ERROR Failed to find DAQ tree analyzer.
+Traceback (most recent call last):
+  File "/home/engineer/Scimitar/tab/chassisdyno/test.py", line 673, in enter
+    daq_channel = ana.source._bound_node
+AttributeError: 'ContainerParameter' object has no attribute 'source'
+2017-07-07 12:11:26,458 test DEBUG Nothing needs checked and no messages were displayed. Skipping.
+2017-07-07 12:11:26,459 test DEBUG Bag empty status [False, False, False, False]
+2017-07-07 12:11:26,560 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,2,0,1,1,0\r\n'>
+2017-07-07 12:11:26,560 cvs DEBUG Bagging operation object None
+2017-07-07 12:11:26,560 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,2,0,2,1,0\r\n'>
+2017-07-07 12:11:26,560 cvs DEBUG Bagging operation object None
+2017-07-07 12:11:26,560 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,2,0,3,1,0\r\n'>
+2017-07-07 12:11:26,560 cvs DEBUG Bagging operation object None
+2017-07-07 12:11:26,560 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,2,0,4,1,0\r\n'>
+2017-07-07 12:11:26,560 cvs DEBUG Bagging operation object None
+2017-07-07 12:11:27,561 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,3,1,1,2,1,0,1,0\r\n'>
+2017-07-07 12:11:27,561 cvs DEBUG Bagging operation object <BagOperation object at 0x7f5b19f90320 (util+operation+Abortable at 0x7f5b1c046020)>
+2017-07-07 12:12:05,578 cvs_bag DEBUG Sequence end 'SEND,00,01,01'
+2017-07-07 12:12:05,580 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,2,0,1,1,0\r\n'>
+2017-07-07 12:12:05,580 cvs DEBUG Bagging operation object None
+2017-07-07 12:12:05,580 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,2,0,2,1,0\r\n'>
+2017-07-07 12:12:05,580 cvs DEBUG Bagging operation object None
+2017-07-07 12:12:05,580 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,2,0,3,1,0\r\n'>
+2017-07-07 12:12:05,580 cvs DEBUG Bagging operation object None
+2017-07-07 12:12:05,580 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,2,0,4,1,0\r\n'>
+2017-07-07 12:12:05,580 cvs DEBUG Bagging operation object None
+2017-07-07 12:12:05,580 cvs DEBUG Launching bagging transaction <Transaction 'CBOP,1,1,1,3,1,0,1,0\r\n'>
+2017-07-07 12:12:05,580 cvs DEBUG Bagging operation object None
+2017-07-07 12:12:06,582 test INFO Bag time verfied 'daq.horibamexa.cvs.bag.pair1' = 780
+2017-07-07 12:12:06,585 vulcan DEBUG Requerying dyno info because test is starting.
+2017-07-07 12:12:06,616 vulcan DEBUG Vehicle name is: 'Chevy Silverado 2500 HD'
+2017-07-07 12:12:06,662 vulcan DEBUG Road simulation data: ['XASMX', '0', '95.56', '4.3933', '0.10662', '2', '259.38', '4.7942', '0.10899', '9638', '9500', 'S2HI']

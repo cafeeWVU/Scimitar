@@ -1,0 +1,93 @@
+2017-07-03 16:33:36,888 main INFO ================= Welcome to Scimitar: Good luck. =================
+2017-07-03 16:33:36,893 main INFO Splash screen changed to 'Loading numeric functions...'
+2017-07-03 16:33:36,946 main INFO Splash screen changed to 'Checking versions of dependent components...'
+2017-07-03 16:33:36,946 main INFO Splash screen changed to 'Checking release version...'
+2017-07-03 16:33:36,946 main INFO Splash screen changed to 'Raising process priority...'
+2017-07-03 16:33:36,947 main INFO Splash screen changed to 'Supressing screensaver/sleep/hibernate...'
+2017-07-03 16:33:36,956 screensaver DEBUG Will be using generic freedesktop interface.
+2017-07-03 16:33:36,957 main INFO Splash screen changed to 'Creating network adapter monitor...'
+2017-07-03 16:33:36,966 networkadapterlist DEBUG Adding network: IPv4Network('192.168.1.130/24')
+2017-07-03 16:33:36,966 networkadapterlist DEBUG Adding network: IPv4Network('192.168.2.3/24')
+2017-07-03 16:33:36,984 main INFO Splash screen changed to 'Checking folders...'
+2017-07-03 16:33:36,985 main INFO Splash screen changed to 'Checking for data in need of recovery...'
+2017-07-03 16:33:37,020 main INFO Finished searching for unrecovered data.
+2017-07-03 16:33:37,021 main INFO Splash screen changed to 'Loading data structure library...'
+2017-07-03 16:33:37,021 main INFO Splash screen changed to 'Loading laboratory tree...'
+2017-07-03 16:33:37,186 xmlmarshal DEBUG Loaded tree in 161.6 milliseconds using expat
+2017-07-03 16:33:37,189 main INFO Splash screen changed to 'Loading data acquisition code...'
+2017-07-03 16:33:37,189 main INFO Splash screen changed to 'Loading data acquisition tree...'
+2017-07-03 16:33:37,906 xmlmarshal DEBUG Loaded tree in 694.9 milliseconds using expat
+2017-07-03 16:33:37,916 main INFO Splash screen changed to 'Starting timing thread...'
+2017-07-03 16:33:37,916 timingloop DEBUG Starting timing thread
+2017-07-03 16:33:37,916 timingloop DEBUG Return from start thread call
+2017-07-03 16:33:37,916 main INFO Splash screen changed to 'Initalizing data acquisition devices...'
+2017-07-03 16:33:37,916 __init__ DEBUG Importing DAQ interface modules
+2017-07-03 16:33:37,916 __init__ DEBUG Starting daq device factories
+2017-07-03 16:33:37,917 timingloop DEBUG Timing loop is now running in seperate thread.
+2017-07-03 16:33:37,919 weather DEBUG Cache for u'KMGW' last updated 17939 seconds ago.
+2017-07-03 16:33:37,920 __init__ DEBUG Finished daq start
+2017-07-03 16:33:37,920 main INFO Splash screen changed to 'Starting event stream server...'
+2017-07-03 16:33:37,926 main INFO Splash screen changed to 'Loading plugins...'
+2017-07-03 16:33:37,928 main INFO Splash screen changed to 'Loading main window...'
+2017-07-03 16:33:37,928 main DEBUG About to import mainwindow
+2017-07-03 16:33:38,014 main INFO Splash screen changed to 'Creating main window...'
+2017-07-03 16:33:38,014 main DEBUG Instatiating MainWindow
+2017-07-03 16:33:38,031 icpcon DEBUG Transaction added <WriteDOs object at 0x7f2a1aed3d20 (daq+transqueue+Transaction at 0x7f2a1c0078c0)>
+2017-07-03 16:33:38,032 __init__ DEBUG MRU connected to plugin 'ChassisDyno'
+2017-07-03 16:33:38,033 __init__ DEBUG MRU connected to plugin 'Gas'
+2017-07-03 16:33:38,033 main DEBUG Main window instantiated
+2017-07-03 16:33:38,033 main DEBUG About to show main window...
+2017-07-03 16:33:38,048 main DEBUG About to destroy splash screen...
+2017-07-03 16:33:38,048 main DEBUG Attempting to release import lock.
+2017-07-03 16:33:38,048 main DEBUG Entering gtk main loop...
+2017-07-03 16:33:38,048 weather INFO Starting weather fetch for u'KMGW'.
+2017-07-03 16:33:38,049 weather INFO Attempting fetch from u'http://w1.weather.gov/xml/current_obs/KMGW.xml'.
+2017-07-03 16:33:38,074 screensaver INFO Screensaver and sleep should now be inhibited.
+2017-07-03 16:33:38,142 weather INFO Weather fetch to u'/home/engineer/.scimitar/cache/weather/KMGW.xml' succeeded.
+2017-07-03 16:33:38,148 vulcan DEBUG Vehicle name is: 'LINCOLN 2017 3.7 5250'
+2017-07-03 16:33:38,190 vulcan DEBUG Road simulation data: ['XASMX', '0', '37.75', '1.2124', '0.04355', '2', '145.15', '1.887', '0.04453', '5325', '5250', 'S2VO']
+2017-07-03 16:33:38,233 weather DEBUG Weather fetch done for u'KMGW'.
+2017-07-03 16:33:38,233 weather DEBUG Cache for u'KMGW' last updated 0 seconds ago.
+2017-07-03 16:33:38,233 weather DEBUG Data for u'KMGW' is up to date, parsing.
+2017-07-03 16:33:38,237 weather DEBUG Parsed ok for u'KMGW'. Going back to sleep.
+2017-07-03 16:33:38,322 icpcon DEBUG Response to set engineering mode: '01020000000601050277ff00'
+2017-07-03 16:33:38,423 icpcon DEBUG Response to set open tc detection: '01020000000601050279ff00'
+2017-07-03 16:33:38,524 icpcon DEBUG Recieved model number: 7019
+2017-07-03 16:33:38,617 icpcon DEBUG Recieved AI channel count: 10
+2017-07-03 16:33:38,718 icpcon DEBUG Recieved DO channel count: 6
+2017-07-03 16:33:38,819 icpcon DEBUG Recieved AO channel count: 0
+2017-07-03 16:33:39,123 icpcon DEBUG Response to enable calibration False: '0102000000060105033e0000'
+2017-07-03 16:33:39,518 icpcon WARNING ---------------- Sending values: [False, False, False, False, False, False]
+2017-07-03 16:33:39,518 icpcon DEBUG Clearing pending DO write
+2017-07-03 16:33:39,620 icpcon WARNING ------------------- WRITE DO reply '\x01\x02\x00\x00\x00\x06\x01\x0f\x00\x00\x00\x06'
+2017-07-03 16:33:39,620 icpcon DEBUG Updating <DigitalOut do0:False> with False
+2017-07-03 16:33:39,620 icpcon DEBUG Updating <DigitalOut do1:False> with False
+2017-07-03 16:33:39,620 icpcon DEBUG Updating <DigitalOut do2:False> with False
+2017-07-03 16:33:39,620 icpcon DEBUG Updating <DigitalOut do3:False> with False
+2017-07-03 16:33:39,620 icpcon DEBUG Updating <DigitalOut do4:False> with False
+2017-07-03 16:33:39,620 icpcon DEBUG Updating <DigitalOut do5:False> with False
+2017-07-03 16:33:39,768 sseserver DEBUG Created stream client ('127.0.0.1', 0) 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+2017-07-03 16:33:40,875 sseserver DEBUG Created stream client ('127.0.0.1', 0) 'Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4'
+2017-07-03 16:35:40,943 labtree DEBUG Editor does not support locking.
+2017-07-03 16:38:55,056 labtree DEBUG Editor does not support locking.
+2017-07-03 16:39:01,018 labtree DEBUG Editor does not support locking.
+2017-07-03 16:39:04,780 labtree DEBUG Editor does not support locking.
+2017-07-03 16:39:14,805 icpcon DEBUG Transaction added <WriteDOs object at 0x7f2a191bfd20 (daq+transqueue+Transaction at 0x3580900)>
+2017-07-03 16:39:14,811 xmlmarshal DEBUG Loaded tree in 32.3 milliseconds using expat
+2017-07-03 16:39:14,819 icpcon WARNING ---------------- Sending values: [False, False, False, True, False, False]
+2017-07-03 16:39:14,819 icpcon DEBUG Clearing pending DO write
+2017-07-03 16:39:14,821 labtree DEBUG Editor does not support locking.
+2017-07-03 16:39:14,821 parametertreeview DEBUG Calling shutdown model due to set_model.
+2017-07-03 16:39:14,824 parametertreeview DEBUG Calling shutdown model due to destroy.
+2017-07-03 16:39:14,837 main DEBUG setting HTTP server stop flag
+2017-07-03 16:39:14,837 sseserver INFO Got shutdown signal.
+2017-07-03 16:39:15,231 sseserver INFO Shutdown complete.
+2017-07-03 16:39:15,231 main DEBUG setting central timer stop flag
+2017-07-03 16:39:15,231 timingloop DEBUG Timing loop stop requested.
+2017-07-03 16:39:15,231 main DEBUG Waiting for termination of central timer thread
+2017-07-03 16:39:15,231 timingloop DEBUG Timing loop terminated.
+2017-07-03 16:39:15,231 main DEBUG releasing gdk lock
+2017-07-03 16:39:15,231 main DEBUG unsupressing screensaver/powersave
+2017-07-03 16:39:15,232 screensaver INFO Screensaver and sleep should no longer be inhibited.
+2017-07-03 16:39:15,232 main DEBUG releasing single instance lock
+2017-07-03 16:39:15,232 main INFO ================= Sucessful program shutdown. =================

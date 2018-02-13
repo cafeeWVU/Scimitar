@@ -1,0 +1,188 @@
+2018-02-08 13:47:48,463 __init__ INFO ================= Welcome to Scimitar: Good luck. =================
+2018-02-08 13:47:48,469 __init__ INFO Splash screen changed to 'Loading numeric functions...'
+2018-02-08 13:47:49,703 __init__ INFO Splash screen changed to 'Checking versions of dependent components...'
+2018-02-08 13:47:49,703 __init__ INFO Splash screen changed to 'Checking release version...'
+2018-02-08 13:47:49,714 __init__ INFO Splash screen changed to 'Raising process priority...'
+2018-02-08 13:47:49,732 __init__ INFO Splash screen changed to 'Supressing screensaver/sleep/hibernate...'
+2018-02-08 13:47:49,749 __init__ INFO Splash screen changed to 'Creating network adapter monitor...'
+2018-02-08 13:47:49,809 __init__ DEBUG Adding network: IPv4Network('192.168.1.239/24')
+2018-02-08 13:47:49,809 __init__ INFO Splash screen changed to 'Checking folders...'
+2018-02-08 13:47:49,811 __init__ INFO Splash screen changed to 'Checking for data in need of recovery...'
+2018-02-08 13:47:50,099 __init__ DEBUG Attempting to package activity.
+2018-02-08 13:47:50,101 __init__ DEBUG Filename will be 'C:\\Users\\CAFEE ENGINEER\\My Documents\\Lab Data\\Activities\\Recovered\\20180208_134750.tz'
+2018-02-08 13:47:50,174 __init__ DEBUG 'C:\\Users\\CAFEE ENGINEER\\My Documents\\Lab Data\\Activities\\Recovered\\20180208_134750.tz' has been closed.
+2018-02-08 13:47:50,177 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\.RECOVERY_INFO\\segments'
+2018-02-08 13:47:50,177 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\.RECOVERY_INFO\\state'
+2018-02-08 13:47:50,180 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.ambient.dewpoint'
+2018-02-08 13:47:50,187 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.ambient.pressure'
+2018-02-08 13:47:50,188 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.ambient.pressure.from_dewtrak'
+2018-02-08 13:47:50,188 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.ambient.pressure.from_weather'
+2018-02-08 13:47:50,190 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.ambient.pressure.from_weather.sea_level_pressure'
+2018-02-08 13:47:50,190 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.ambient.temperature'
+2018-02-08 13:47:50,191 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.dilution_air_pegasor'
+2018-02-08 13:47:50,193 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.dilution_air_pegasor.setpoint'
+2018-02-08 13:47:50,194 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.dyno.force'
+2018-02-08 13:47:50,194 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.dyno.gradient'
+2018-02-08 13:47:50,196 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.dyno.power'
+2018-02-08 13:47:50,197 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.dyno.temperature.front.temp1'
+2018-02-08 13:47:50,197 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.dyno.temperature.front.temp2'
+2018-02-08 13:47:50,197 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.dyno.temperature.rear.temp1'
+2018-02-08 13:47:50,198 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.dyno.temperature.rear.temp2'
+2018-02-08 13:47:50,198 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.eeps_total_conc'
+2018-02-08 13:47:50,200 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.dilution.enable'
+2018-02-08 13:47:50,200 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.dilution.vmix'
+2018-02-08 13:47:50,207 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.dnph.enable'
+2018-02-08 13:47:50,209 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.dnph.flow'
+2018-02-08 13:47:50,210 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.ftir.actylene'
+2018-02-08 13:47:50,210 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.ftir.ch4_250'
+2018-02-08 13:47:50,211 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.ftir.ch4_3000'
+2018-02-08 13:47:50,211 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.ftir.co2'
+2018-02-08 13:47:50,213 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.ftir.co_10000'
+2018-02-08 13:47:50,213 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.ftir.diesel_c1'
+2018-02-08 13:47:50,213 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.ftir.ethane'
+2018-02-08 13:47:50,213 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.ftir.ethylene'
+2018-02-08 13:47:50,214 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.ftir.formaldehyde'
+2018-02-08 13:47:50,214 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.ftir.hnco'
+2018-02-08 13:47:50,216 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.ftir.n20'
+2018-02-08 13:47:50,217 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.ftir.nh3_300'
+2018-02-08 13:47:50,223 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.ftir.nh3_3000'
+2018-02-08 13:47:50,224 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.ftir.no'
+2018-02-08 13:47:50,226 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.ftir.no2_150'
+2018-02-08 13:47:50,226 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.ftir.no2_2000'
+2018-02-08 13:47:50,226 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.ftir.pressure'
+2018-02-08 13:47:50,227 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.ftir.propylene'
+2018-02-08 13:47:50,227 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.ftir.temp'
+2018-02-08 13:47:50,229 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.gas.ch4'
+2018-02-08 13:47:50,230 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.gas.co'
+2018-02-08 13:47:50,230 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.gas.co2'
+2018-02-08 13:47:50,230 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.gas.co2_7400'
+2018-02-08 13:47:50,232 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.gas.co_7400'
+2018-02-08 13:47:50,232 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.gas.hc'
+2018-02-08 13:47:50,233 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.gas.hc.temperature.line'
+2018-02-08 13:47:50,239 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.gas.hc.temperature.pump'
+2018-02-08 13:47:50,240 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.gas.hc_bag'
+2018-02-08 13:47:50,242 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.gas.nox'
+2018-02-08 13:47:50,242 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.gas.nox_7400'
+2018-02-08 13:47:50,243 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.pm.bypass.enable'
+2018-02-08 13:47:50,243 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.pm.filter.filter1.enable'
+2018-02-08 13:47:50,243 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.pm.filter.filter2.enable'
+2018-02-08 13:47:50,244 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.pm.filter.filter3.enable'
+2018-02-08 13:47:50,244 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.pm.flow.dilution'
+2018-02-08 13:47:50,246 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.pm.flow.dilution.setpoint'
+2018-02-08 13:47:50,246 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.pm.flow.total'
+2018-02-08 13:47:50,246 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.pm.flow.total.setpoint'
+2018-02-08 13:47:50,246 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.pm.temperature.box'
+2018-02-08 13:47:50,247 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.pm.temperature.filter_face'
+2018-02-08 13:47:50,249 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.soot.avlmsspost.dil_ratio'
+2018-02-08 13:47:50,255 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.soot.avlmsspost.soot_conc_dil_corrected'
+2018-02-08 13:47:50,256 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.soot.avlmsspost.soot_conc_raw'
+2018-02-08 13:47:50,256 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.soot.avlmsspre.dil_ratio'
+2018-02-08 13:47:50,257 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.soot.avlmsspre.soot_conc_dil_corrected'
+2018-02-08 13:47:50,259 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.emission.soot.avlmsspre.soot_conc_raw'
+2018-02-08 13:47:50,259 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.variable_speed_fan.enable'
+2018-02-08 13:47:50,259 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.variable_speed_fan.fan_speed'
+2018-02-08 13:47:50,260 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.variable_speed_fan.fan_speed.output'
+2018-02-08 13:47:50,262 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.variable_speed_fan.fixed_speed_mode'
+2018-02-08 13:47:50,262 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.variable_speed_fan.outlet_velocity'
+2018-02-08 13:47:50,263 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.vehicle.engine.coolant.temperature'
+2018-02-08 13:47:50,263 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.vehicle.engine.exhaust.cpc.flow'
+2018-02-08 13:47:50,263 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.vehicle.engine.exhaust.cpc.particle_count'
+2018-02-08 13:47:50,265 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.vehicle.engine.exhaust.pre_cat_temperature'
+2018-02-08 13:47:50,270 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.vehicle.engine.exhaust.temperature'
+2018-02-08 13:47:50,272 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.vehicle.engine.intake.flow'
+2018-02-08 13:47:50,273 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.vehicle.engine.intake.pressure'
+2018-02-08 13:47:50,273 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.vehicle.engine.intake.vflow'
+2018-02-08 13:47:50,275 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.vehicle.engine.intake.vflow.ap'
+2018-02-08 13:47:50,276 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.vehicle.engine.intake.vflow.dp'
+2018-02-08 13:47:50,276 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.vehicle.engine.intake.vflow.temp'
+2018-02-08 13:47:50,276 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.vehicle.engine.mil'
+2018-02-08 13:47:50,276 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.vehicle.engine.speed'
+2018-02-08 13:47:50,278 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.vehicle.force'
+2018-02-08 13:47:50,278 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.vehicle.speed'
+2018-02-08 13:47:50,279 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries\\lab.vehicle.speed.setpoint'
+2018-02-08 13:47:50,282 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\alarms.csv'
+2018-02-08 13:47:50,286 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\daq.xml'
+2018-02-08 13:47:50,286 __init__ DEBUG Deleting temporary file 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\lab.xml'
+2018-02-08 13:47:50,286 __init__ DEBUG Deleting temporary directory 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\.RECOVERY_INFO'
+2018-02-08 13:47:50,288 __init__ DEBUG Deleting temporary directory 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\foreign'
+2018-02-08 13:47:50,288 __init__ DEBUG Deleting temporary directory 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455\\timeseries'
+2018-02-08 13:47:50,289 __init__ DEBUG Removing capture directory 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151802810455'
+2018-02-08 13:47:51,375 __init__ INFO Finished searching for unrecovered data.
+2018-02-08 13:47:51,382 __init__ INFO Splash screen changed to 'Loading data structure library...'
+2018-02-08 13:47:51,385 __init__ INFO Splash screen changed to 'Loading laboratory tree...'
+2018-02-08 13:47:52,262 __init__ DEBUG Loaded tree in 839.2 milliseconds using expat
+2018-02-08 13:47:52,280 __init__ INFO Splash screen changed to 'Loading data acquisition code...'
+2018-02-08 13:47:52,282 __init__ INFO Splash screen changed to 'Loading data acquisition tree...'
+2018-02-08 13:47:52,414 __init__ DEBUG Serial win32 monkey patch (new method) ok
+2018-02-08 13:47:52,858 __init__ DEBUG Serial win32 monkey patch (new method) ok
+2018-02-08 13:47:53,180 __init__ DEBUG Loaded tree in 889.2 milliseconds using expat
+2018-02-08 13:47:53,184 __init__ INFO Splash screen changed to 'Starting timing thread...'
+2018-02-08 13:47:53,187 __init__ INFO Splash screen changed to 'Initalizing data acquisition devices...'
+2018-02-08 13:47:53,187 __init__ DEBUG Timing loop is now running in seperate thread.
+2018-02-08 13:47:53,187 __init__ DEBUG Importing DAQ interface modules
+2018-02-08 13:47:53,190 __init__ DEBUG Starting daq device factories
+2018-02-08 13:47:53,196 __init__ DEBUG Finished daq start
+2018-02-08 13:47:53,197 __init__ INFO Splash screen changed to 'Starting event stream server...'
+2018-02-08 13:47:53,230 __init__ INFO Splash screen changed to 'Loading plugins...'
+2018-02-08 13:47:53,338 __init__ DEBUG Transaction added <WriteDOs object at 0xae12058 (daq+transqueue+Transaction at 0x77d2c30)>
+2018-02-08 13:47:53,348 __init__ ERROR Failed to load plugin 'something'.
+Traceback (most recent call last):
+  File "c:\Program Files (x86)\Scimitar\Scimitar - light\plugins\__init__.py", line 49, in load
+    module = __import__('plugins.' + name.lower())
+ImportError: No module named something
+2018-02-08 13:47:53,348 __init__ ERROR Failed to load plugin 'EngineDyno'.
+Traceback (most recent call last):
+  File "c:\Program Files (x86)\Scimitar\Scimitar - light\plugins\__init__.py", line 49, in load
+    module = __import__('plugins.' + name.lower())
+ImportError: No module named enginedyno
+2018-02-08 13:47:53,397 __init__ INFO Splash screen changed to 'Loading main window...'
+2018-02-08 13:47:53,397 __init__ DEBUG About to import mainwindow
+2018-02-08 13:47:53,588 __init__ INFO Splash screen changed to 'Creating main window...'
+2018-02-08 13:47:53,591 __init__ DEBUG Instatiating MainWindow
+2018-02-08 13:47:53,644 __init__ DEBUG MRU connected to plugin 'OnroadPlume'
+2018-02-08 13:47:53,644 __init__ DEBUG MRU connected to plugin 'CFREngine'
+2018-02-08 13:47:53,644 __init__ DEBUG MRU connected to plugin 'RailTunnel'
+2018-02-08 13:47:53,645 __init__ DEBUG MRU connected to plugin 'Gas'
+2018-02-08 13:47:53,648 __init__ DEBUG MRU connected to plugin 'SmallEngine'
+2018-02-08 13:47:53,648 __init__ DEBUG MRU connected to plugin 'WindTunnel'
+2018-02-08 13:47:53,648 __init__ DEBUG MRU connected to plugin 'ChassisDyno'
+2018-02-08 13:47:53,651 __init__ DEBUG MRU connected to plugin 'DebugTools'
+2018-02-08 13:47:53,651 __init__ DEBUG MRU connected to plugin 'FuelEconomy'
+2018-02-08 13:47:53,654 __init__ DEBUG MRU connected to plugin 'Locomotive'
+2018-02-08 13:47:53,655 __init__ ERROR Failed to determine current locomotive.
+Traceback (most recent call last):
+  File "c:\Program Files (x86)\Scimitar\Scimitar - light\plugins\locomotive.py", line 79, in _update_sidebar_widget
+    current = self.get_current_loco()
+  File "c:\Program Files (x86)\Scimitar\Scimitar - light\plugins\locomotive.py", line 108, in get_current_loco
+    if hashlib.sha256(current_loco['current']).hexdigest() != current_loco['hash']:
+KeyError: 'current'
+2018-02-08 13:47:53,657 __init__ DEBUG MRU connected to plugin 'ContainerOnroad'
+2018-02-08 13:47:53,657 __init__ DEBUG Main window instantiated
+2018-02-08 13:47:53,657 __init__ DEBUG About to show main window...
+2018-02-08 13:47:53,674 __init__ DEBUG About to destroy splash screen...
+2018-02-08 13:47:53,678 __init__ DEBUG Attempting to release import lock.
+2018-02-08 13:47:53,680 __init__ DEBUG Entering gtk main loop...
+2018-02-08 13:47:57,947 __init__ DEBUG Recursive lock established as follows: <RecursiveLock On:<Lab 'lab'> Reason:<parameter.lock.Reason 'propane injection'>>
+2018-02-08 13:47:57,987 __init__ INFO Serializing tree...
+2018-02-08 13:47:58,137 __init__ INFO Writing to 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151811567796\\lab.xml'
+2018-02-08 13:47:58,144 __init__ INFO Serializing tree...
+2018-02-08 13:47:58,233 __init__ INFO Writing to 'C:\\Users\\CAFEE ENGINEER\\AppData\\Roaming\\Scimitar\\Data\\151811567796\\daq.xml'
+2018-02-08 13:48:02,233 __init__ ERROR the timing loop is late, resetting
+2018-02-08 13:48:09,585 __init__ ERROR the timing loop is late, resetting
+2018-02-08 13:48:13,381 __init__ INFO Mainloop terminated due to keyboard interrupt
+2018-02-08 13:48:13,388 __init__ DEBUG setting HTTP server stop flag
+2018-02-08 13:48:13,388 __init__ INFO Got shutdown signal.
+2018-02-08 13:48:13,637 __init__ ERROR Failed to shutdown http server.
+Traceback (most recent call last):
+  File ".\Scimitar - light\main.py", line 584, in main
+    gtk.main()
+  File "c:\Program Files (x86)\Scimitar\Scimitar - light\util\sseserver.py", line 39, in shutdown
+    BaseHTTPServer.HTTPServer.shutdown(self)
+  File "./SocketServer.py", line 240, in shutdown
+  File "./threading.py", line 394, in wait
+  File "./threading.py", line 238, in wait
+KeyboardInterrupt
+2018-02-08 13:48:13,642 __init__ DEBUG setting central timer stop flag
+2018-02-08 13:48:13,644 __init__ DEBUG Timing loop stop requested.
+2018-02-08 13:48:13,647 __init__ DEBUG Waiting for termination of central timer thread
+2018-02-08 13:48:13,648 __init__ DEBUG Timing loop terminated.

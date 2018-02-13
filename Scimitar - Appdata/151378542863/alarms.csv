@@ -1,0 +1,62 @@
+typename,message,component,location,detail,active,invoked,acknowledged,cancelled,python_context
+ProgramUpdateFailed,User program failed because of an AttributeError exception.,lab.emission.pm.proportional_factor.program,<Local>,"AttributeError exception was caused by the following line in the user defined program in lab.emission.pm.proportional_factor.program:
+    tunnel_flowrate_actual_scfm = lab.emission.dilution.vmix.traditional.value
+The complete text of the exception is:
+AttributeError(""'ContainerParameter' object has no attribute 'vmix'"",)
+
+The complete stack is as follows:
+  File ""./threading.py"", line 503, in __bootstrap
+  File ""./threading.py"", line 530, in __bootstrap_inner
+  File ""c:\Program Files (x86)\Scimitar\Scimitar\daq\timingloop.py"", line 200, in run
+    self.tick()
+  File ""c:\Program Files (x86)\Scimitar\Scimitar\daq\timingloop.py"", line 133, in tick
+    emit(""compute"",c)
+  File ""c:\Program Files (x86)\Scimitar\Scimitar\parameter\programmable.py"", line 450, in _update
+    self.parent.update(ProgrammableParameter._update(self,centraltimer,counter))
+  File ""c:\Program Files (x86)\Scimitar\Scimitar\parameter\programmable.py"", line 359, in _update
+    tb = self._format_user_exception()
+  File ""c:\Program Files (x86)\Scimitar\Scimitar\parameter\programmable.py"", line 345, in _format_user_exception
+    stack = """".join(traceback.format_stack())
+",True,2017-12-20 10:55:59.834000,,,"('parameter.programmable', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\programmable.py', 370)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.ambient.pressure.from_weather.sea_level_pressure,<Local>,,True,2017-12-20 10:56:07.835000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.ambient.pressure.from_dewtrak,<Local>,,True,2017-12-20 10:56:07.837000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.pm.filter.filter1.temperature,<Local>,,True,2017-12-20 10:56:07.838000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.pm.flow.total,<Local>,,True,2017-12-20 10:56:07.839000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.pm.flow.flow,<Local>,,True,2017-12-20 10:56:07.840000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.pm.flow.flow.temperature,<Local>,,True,2017-12-20 10:56:07.841000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.pm.heated_line,<Local>,,True,2017-12-20 10:56:07.842000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.pm.box,<Local>,,True,2017-12-20 10:56:07.843000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.temperature.oven,<Local>,,True,2017-12-20 10:56:07.844000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.temperature.heated_line_1,<Local>,,True,2017-12-20 10:56:07.845000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.temperature.heated_filter_2,<Local>,,True,2017-12-20 10:56:07.845000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.temperature.hprotect,<Local>,,True,2017-12-20 10:56:07.847000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.temperature.nmc,<Local>,,True,2017-12-20 10:56:07.847000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.temperature.fid_1,<Local>,,True,2017-12-20 10:56:07.848000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.temperature.fid_2,<Local>,,True,2017-12-20 10:56:07.849000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.temperature.nox_cooler,<Local>,,True,2017-12-20 10:56:07.849000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.temperature.h_filter,<Local>,,True,2017-12-20 10:56:07.850000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.temperature.nox_converter,<Local>,,True,2017-12-20 10:56:07.850000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.ftir.temp_supply,<Local>,,True,2017-12-20 10:56:07.851000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.ftir.hnco,<Local>,,True,2017-12-20 10:56:07.853000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.ftir.formaldehyde,<Local>,,True,2017-12-20 10:56:07.854000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.ftir.ureabyproduct,<Local>,,True,2017-12-20 10:56:07.854000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.ftir.co_low,<Local>,,True,2017-12-20 10:56:07.855000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.ftir.propylene,<Local>,,True,2017-12-20 10:56:07.856000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.ftir.c3h8,<Local>,,True,2017-12-20 10:56:07.856000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.ftir.ethylene,<Local>,,True,2017-12-20 10:56:07.857000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.ftir.ch4_high,<Local>,,True,2017-12-20 10:56:07.858000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.ftir.ethane,<Local>,,True,2017-12-20 10:56:07.858000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.ftir.acetylene,<Local>,,True,2017-12-20 10:56:07.859000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.gas.ftir.noxp,<Local>,,True,2017-12-20 10:56:07.860000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.dilution.blower.flow,<Local>,,True,2017-12-20 10:56:07.862000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.dilution.blower.drive,<Local>,,True,2017-12-20 10:56:07.862000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.dilution.post_orifice,<Local>,,True,2017-12-20 10:56:07.863000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.bagging.flow.background,<Local>,,True,2017-12-20 10:56:07.863000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.emission.bagging.flow.dilute,<Local>,,True,2017-12-20 10:56:07.864000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.fuel.counter.return,<Local>,,True,2017-12-20 10:56:07.865000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceMissingAlarm,Value unknown because daq device is missing.,lab.fuel.counter.supply,<Local>,,True,2017-12-20 10:56:07.865000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 333)"
+MeasurementSourceUnknownAlarm,Value unknown because 'Virtual Source' is also 'unknown'.,lab.engine.speed.cycle_setpoint,<Local>,,True,2017-12-20 10:56:07.866000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 339)"
+MeasurementSourceUnknownAlarm,Value unknown because 'Virtual Source' is also 'unknown'.,lab.engine.speed.cycle_setpoint.future,<Local>,,True,2017-12-20 10:56:07.866000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 339)"
+MeasurementSourceUnknownAlarm,Value unknown because 'Virtual Source' is also 'unknown'.,lab.engine.torque.setpoint.future,<Local>,,True,2017-12-20 10:56:07.867000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 339)"
+MeasurementSourceUnconfiguredAlarm,Value unknown because no source is set.,lab.vehicle.speed,<Local>,Set the source parameter to a daq channel.,True,2017-12-20 10:56:07.868000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 327)"
+MeasurementSourceUnconfiguredAlarm,Value unknown because no source is set.,lab.vehicle.speed.setpoint,<Local>,Set the source parameter to a daq channel.,True,2017-12-20 10:56:07.868000,,,"('parameter.timeseries', 'c:\\Program Files (x86)\\Scimitar\\Scimitar\\parameter\\timeseries.py', 327)"

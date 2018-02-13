@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DAQ classid="daq:DAQ:0" name="daq">
+  <devices classid="daq.mdap:MDAPFactory:0" label="Ethernet Interfaced TC/DAQ Devices" name="mdap"/>
+  <devices classid="daq.serial:SerialFactory:0" label="Serial Port Interfaced Devices" name="serial"/>
+  <devices classid="daq.ni:NIDAQmxFactory:0" label="&lt;span color=&quot;#aaa&quot;&gt;National Instruments DAQmx
+&lt;span size=&quot;small&quot; style=&quot;italic&quot;&gt;Only supported on Microsoft Windows.&lt;/span&gt;&lt;/span&gt;" name="nidaqmx"/>
+  <devices classid="daq.bardacdriveweb:BardacDriveWebFactory:0" label="Bardac 'drive.web' Devices" name="bardac">
+    <device classid="daq.bardacdriveweb:Bardac:0" disabled="False" label="WVUIC Light Chassis Dyno Bed" name="device_192_168_2_133">
+      <container classid="daq.bardacdriveweb:Configuration:0" label="Configuration" name="configuration">
+        <int classid="parameter.value:PositiveIntegerParameter:0" label="Maximum Pipelined Transactions" name="max_pipelined_trans">15</int>
+      </container>
+      <boolchannel classid="daq.bardacdriveweb:DigitalOutput:0" name="reg5107">
+        False
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+        <int classid="daq.bardacdriveweb:RegisterNumber:0" name="register_number">5107</int>
+        <string classid="parameter.enum:EnumParameter:0" name="poll_rate">
+          <![CDATA[1 Hz]]>
+          <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Every Minute,Every 30 seconds,Every 10 seconds,Every other second,1 Hz,2 Hz,5 Hz,10 Hz]</string>
+        </string>
+      </boolchannel>
+      <floatchannel classid="daq.bardacdriveweb:AnalogInput:0" name="reg5006">
+        258.93
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[%]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">350.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+        <int classid="daq.bardacdriveweb:RegisterNumber:0" name="register_number">5006</int>
+        <string classid="parameter.enum:EnumParameter:0" name="poll_rate">
+          <![CDATA[1 Hz]]>
+          <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Every Minute,Every 30 seconds,Every 10 seconds,Every other second,1 Hz,2 Hz,5 Hz,10 Hz]</string>
+        </string>
+      </floatchannel>
+      <boolchannel classid="daq.bardacdriveweb:DigitalInput:0" name="reg5105">
+        True
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+        <int classid="daq.bardacdriveweb:RegisterNumber:0" name="register_number">5105</int>
+        <string classid="parameter.enum:EnumParameter:0" name="poll_rate">
+          <![CDATA[1 Hz]]>
+          <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Every Minute,Every 30 seconds,Every 10 seconds,Every other second,1 Hz,2 Hz,5 Hz,10 Hz]</string>
+        </string>
+      </boolchannel>
+      <boolchannel classid="daq.bardacdriveweb:DigitalOutput:0" name="reg5106">
+        False
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+        <int classid="daq.bardacdriveweb:RegisterNumber:0" name="register_number">5106</int>
+        <string classid="parameter.enum:EnumParameter:0" name="poll_rate">
+          <![CDATA[1 Hz]]>
+          <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Every Minute,Every 30 seconds,Every 10 seconds,Every other second,1 Hz,2 Hz,5 Hz,10 Hz]</string>
+        </string>
+      </boolchannel>
+      <floatchannel classid="daq.bardacdriveweb:AnalogInput:0" name="reg5050">
+        -6.11
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[%]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-1.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+        <int classid="daq.bardacdriveweb:RegisterNumber:0" name="register_number">5050</int>
+        <string classid="parameter.enum:EnumParameter:0" name="poll_rate">
+          <![CDATA[10 Hz]]>
+          <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Every Minute,Every 30 seconds,Every 10 seconds,Every other second,1 Hz,2 Hz,5 Hz,10 Hz]</string>
+        </string>
+      </floatchannel>
+      <floatchannel classid="daq.bardacdriveweb:AnalogOutput:0" name="reg5034">
+        0.01
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[%]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-1.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+        <int classid="daq.bardacdriveweb:RegisterNumber:0" name="register_number">5034</int>
+        <string classid="parameter.enum:EnumParameter:0" name="poll_rate">
+          <![CDATA[10 Hz]]>
+          <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Every Minute,Every 30 seconds,Every 10 seconds,Every other second,1 Hz,2 Hz,5 Hz,10 Hz]</string>
+        </string>
+      </floatchannel>
+      <floatchannel classid="daq.bardacdriveweb:AnalogOutput:0" name="reg5116">
+        100.0
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[%]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-1.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+        <int classid="daq.bardacdriveweb:RegisterNumber:0" name="register_number">5116</int>
+        <string classid="parameter.enum:EnumParameter:0" name="poll_rate">
+          <![CDATA[10 Hz]]>
+          <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Every Minute,Every 30 seconds,Every 10 seconds,Every other second,1 Hz,2 Hz,5 Hz,10 Hz]</string>
+        </string>
+      </floatchannel>
+      <floatchannel classid="daq.bardacdriveweb:AnalogInput:0" name="reg5117">
+        -0.04
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[%]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-1.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+        <int classid="daq.bardacdriveweb:RegisterNumber:0" name="register_number">5117</int>
+        <string classid="parameter.enum:EnumParameter:0" name="poll_rate">
+          <![CDATA[10 Hz]]>
+          <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Every Minute,Every 30 seconds,Every 10 seconds,Every other second,1 Hz,2 Hz,5 Hz,10 Hz]</string>
+        </string>
+      </floatchannel>
+      <floatchannel classid="daq.bardacdriveweb:AnalogInput:0" name="reg5118">
+        0.42
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[%]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-1.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+        <int classid="daq.bardacdriveweb:RegisterNumber:0" name="register_number">5118</int>
+        <string classid="parameter.enum:EnumParameter:0" name="poll_rate">
+          <![CDATA[10 Hz]]>
+          <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Every Minute,Every 30 seconds,Every 10 seconds,Every other second,1 Hz,2 Hz,5 Hz,10 Hz]</string>
+        </string>
+      </floatchannel>
+      <floatchannel classid="daq.bardacdriveweb:AnalogInput:0" name="reg5119">
+        0.0
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[%]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-1.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+        <int classid="daq.bardacdriveweb:RegisterNumber:0" name="register_number">5119</int>
+        <string classid="parameter.enum:EnumParameter:0" name="poll_rate">
+          <![CDATA[10 Hz]]>
+          <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Every Minute,Every 30 seconds,Every 10 seconds,Every other second,1 Hz,2 Hz,5 Hz,10 Hz]</string>
+        </string>
+      </floatchannel>
+      <floatchannel classid="daq.bardacdriveweb:AnalogInput:0" name="reg5046">
+        0.0
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[%]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-1.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+        <int classid="daq.bardacdriveweb:RegisterNumber:0" name="register_number">5046</int>
+        <string classid="parameter.enum:EnumParameter:0" name="poll_rate">
+          <![CDATA[1 Hz]]>
+          <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Every Minute,Every 30 seconds,Every 10 seconds,Every other second,1 Hz,2 Hz,5 Hz,10 Hz]</string>
+        </string>
+      </floatchannel>
+    </device>
+  </devices>
+  <devices classid="daq.elap:ELAPFactory:0" label="Cleanroom Remote Access (ELAP)" name="elap"/>
+  <devices classid="daq.sierrabg3:SierraFactory:0" label="Sierra BG3 System" name="sierrabg3"/>
+  <devices classid="daq.labjack:LabJackFactory:0" label="LabJack Devices (Ethernet Only)" name="labjack"/>
+  <devices classid="daq.webtc:WebTCFactory:0" label="WEB-TC Devices" name="webtc"/>
+  <devices classid="daq.jnior:JNIORFactory:0" label="Integ Process Group JNIOR Devices" name="jnior"/>
+  <devices classid="daq.weather.weather:NationalWeatherServiceFactory:0" label="Weather.gov XML Feeds" name="weather">
+    <device classid="daq.weather.weather:NationalWeatherServiceStation:0" disabled="False" label="Morgantown Municipal-Hart Field, WV" name="kmgw">
+      <container classid="daq.weather.weather:NationalWeatherServiceStationConfiguration:0" label="Configuration" name="configuration">
+        <string classid="daq.weather.weather:StationID:0" name="station_id">
+          <![CDATA[KMGW]]>
+        </string>
+      </container>
+      <floatchannel classid="daq.device:FloatChannel:0" name="temperature">
+        13.3
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[°C]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-30.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">50.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+      </floatchannel>
+      <floatchannel classid="daq.device:FloatChannel:0" name="dewpoint">
+        3.9
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[°C]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-30.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">50.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+      </floatchannel>
+      <floatchannel classid="daq.device:FloatChannel:0" name="sea_level_pressure">
+        101560.0
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">-1</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[Pa]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">90000.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">120000.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+      </floatchannel>
+      <channels classid="daq.device:ChannelGroup:0" label="Wind Information" name="wind">
+        <floatchannel classid="daq.device:FloatChannel:0" name="speed">
+          0.0
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[MPH]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">100.0</float>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#eee]]>
+          </string>
+        </floatchannel>
+        <floatchannel classid="daq.device:FloatChannel:0" name="direction">
+          0.0
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">0</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[°]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">359.0</float>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#eee]]>
+          </string>
+        </floatchannel>
+      </channels>
+    </device>
+  </devices>
+  <devices classid="daq.nosemonitor:NoseFactory:0" label="Purechoice Nose Monitor IAQ" name="nosemonitor"/>
+  <devices classid="daq.xitron:XitronFactory:0" label="Xitron Power Analyzers via Prologix GPIB-Ethernet" name="gpib"/>
+  <devices classid="daq.adam:AdvantechADAMFactory:0" label="Advantech ADAM 6000 Series Devices" name="adam"/>
+  <devices classid="daq.icpcon:ICPCONFactory:0" label="ICP Devices" name="icpcon">
+    <device classid="daq.icpcon:ICPCONPET7019Z:0" disabled="False" label="PET-7019Z" name="PET7019Z_6483a5">
+      <string classid="daq.weblink:WebLink:0" name="web_interface"/>
+      <channels classid="daq.device:ChannelGroup:0" label="Analog Inputs" name="ai">
+        <floatchannel classid="daq.icpcon:AnalogInput:0" last-computed-label="AI0" name="ai0">
+          None
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">4</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[V]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-2.5</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">2.5</float>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#eee]]>
+          </string>
+          <enumchannel classid="daq.icpcon:AnalogInputMode:0" name="mode">
+            <string classid="parameter.vector:StringVectorParameter:0" name="choices">[±15 mV,±50 mV,±100 mV,±500 mV,±1 V,±2.5 V,±20 mA,4~20 mA,±10 V,±5 V,±1 V,±500 mV,±150 mV,±20 mA,Type J,Type K,Type T,Type E,Type R,Type S,Type B,Type N,Type C,Type L,Type M,Type L DIN43710,0~20 mA]</string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </enumchannel>
+          <floatchannel classid="daq.icpcon:RJOffset:0" name="rj_offset">
+            None
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[°C]]>
+            </string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-99.99</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">99.99</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </floatchannel>
+          <enumchannel classid="daq.icpcon:CalibrationControl:0" name="calibration">
+            <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Normal Operation,Enable Calibration,Take Zero,Take Span]</string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+            <value classid="parameter.datetime:DateTimeParameter:0" name="performed">None</value>
+          </enumchannel>
+        </floatchannel>
+        <floatchannel classid="daq.icpcon:AnalogInput:0" last-computed-label="AI1" name="ai1">
+          None
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">4</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[V]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-2.5</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">2.5</float>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#eee]]>
+          </string>
+          <enumchannel classid="daq.icpcon:AnalogInputMode:0" name="mode">
+            <string classid="parameter.vector:StringVectorParameter:0" name="choices">[±15 mV,±50 mV,±100 mV,±500 mV,±1 V,±2.5 V,±20 mA,4~20 mA,±10 V,±5 V,±1 V,±500 mV,±150 mV,±20 mA,Type J,Type K,Type T,Type E,Type R,Type S,Type B,Type N,Type C,Type L,Type M,Type L DIN43710,0~20 mA]</string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </enumchannel>
+          <floatchannel classid="daq.icpcon:RJOffset:0" name="rj_offset">
+            None
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[°C]]>
+            </string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-99.99</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">99.99</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </floatchannel>
+        </floatchannel>
+        <floatchannel classid="daq.icpcon:AnalogInput:0" last-computed-label="AI2" name="ai2">
+          None
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">4</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[V]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-2.5</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">2.5</float>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#eee]]>
+          </string>
+          <enumchannel classid="daq.icpcon:AnalogInputMode:0" name="mode">
+            <string classid="parameter.vector:StringVectorParameter:0" name="choices">[±15 mV,±50 mV,±100 mV,±500 mV,±1 V,±2.5 V,±20 mA,4~20 mA,±10 V,±5 V,±1 V,±500 mV,±150 mV,±20 mA,Type J,Type K,Type T,Type E,Type R,Type S,Type B,Type N,Type C,Type L,Type M,Type L DIN43710,0~20 mA]</string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </enumchannel>
+          <floatchannel classid="daq.icpcon:RJOffset:0" name="rj_offset">
+            None
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[°C]]>
+            </string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-99.99</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">99.99</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </floatchannel>
+        </floatchannel>
+        <floatchannel classid="daq.icpcon:AnalogInput:0" last-computed-label="AI3" name="ai3">
+          None
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">4</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[V]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-2.5</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">2.5</float>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#eee]]>
+          </string>
+          <enumchannel classid="daq.icpcon:AnalogInputMode:0" name="mode">
+            <string classid="parameter.vector:StringVectorParameter:0" name="choices">[±15 mV,±50 mV,±100 mV,±500 mV,±1 V,±2.5 V,±20 mA,4~20 mA,±10 V,±5 V,±1 V,±500 mV,±150 mV,±20 mA,Type J,Type K,Type T,Type E,Type R,Type S,Type B,Type N,Type C,Type L,Type M,Type L DIN43710,0~20 mA]</string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </enumchannel>
+          <floatchannel classid="daq.icpcon:RJOffset:0" name="rj_offset">
+            None
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[°C]]>
+            </string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-99.99</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">99.99</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </floatchannel>
+        </floatchannel>
+        <floatchannel classid="daq.icpcon:AnalogInput:0" last-computed-label="AI4" name="ai4">
+          None
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">4</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[V]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-2.5</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">2.5</float>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#eee]]>
+          </string>
+          <enumchannel classid="daq.icpcon:AnalogInputMode:0" name="mode">
+            <string classid="parameter.vector:StringVectorParameter:0" name="choices">[±15 mV,±50 mV,±100 mV,±500 mV,±1 V,±2.5 V,±20 mA,4~20 mA,±10 V,±5 V,±1 V,±500 mV,±150 mV,±20 mA,Type J,Type K,Type T,Type E,Type R,Type S,Type B,Type N,Type C,Type L,Type M,Type L DIN43710,0~20 mA]</string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </enumchannel>
+          <floatchannel classid="daq.icpcon:RJOffset:0" name="rj_offset">
+            None
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[°C]]>
+            </string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-99.99</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">99.99</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </floatchannel>
+        </floatchannel>
+        <floatchannel classid="daq.icpcon:AnalogInput:0" last-computed-label="AI5" name="ai5">
+          None
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">4</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[V]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-2.5</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">2.5</float>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#eee]]>
+          </string>
+          <enumchannel classid="daq.icpcon:AnalogInputMode:0" name="mode">
+            <string classid="parameter.vector:StringVectorParameter:0" name="choices">[±15 mV,±50 mV,±100 mV,±500 mV,±1 V,±2.5 V,±20 mA,4~20 mA,±10 V,±5 V,±1 V,±500 mV,±150 mV,±20 mA,Type J,Type K,Type T,Type E,Type R,Type S,Type B,Type N,Type C,Type L,Type M,Type L DIN43710,0~20 mA]</string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </enumchannel>
+          <floatchannel classid="daq.icpcon:RJOffset:0" name="rj_offset">
+            None
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[°C]]>
+            </string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-99.99</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">99.99</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </floatchannel>
+        </floatchannel>
+        <floatchannel classid="daq.icpcon:AnalogInput:0" last-computed-label="AI6" name="ai6">
+          None
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">4</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[V]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-2.5</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">2.5</float>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#eee]]>
+          </string>
+          <enumchannel classid="daq.icpcon:AnalogInputMode:0" name="mode">
+            <string classid="parameter.vector:StringVectorParameter:0" name="choices">[±15 mV,±50 mV,±100 mV,±500 mV,±1 V,±2.5 V,±20 mA,4~20 mA,±10 V,±5 V,±1 V,±500 mV,±150 mV,±20 mA,Type J,Type K,Type T,Type E,Type R,Type S,Type B,Type N,Type C,Type L,Type M,Type L DIN43710,0~20 mA]</string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </enumchannel>
+          <floatchannel classid="daq.icpcon:RJOffset:0" name="rj_offset">
+            None
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[°C]]>
+            </string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-99.99</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">99.99</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </floatchannel>
+        </floatchannel>
+        <floatchannel classid="daq.icpcon:AnalogInput:0" last-computed-label="AI7" name="ai7">
+          None
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">4</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[V]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-2.5</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">2.5</float>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#eee]]>
+          </string>
+          <enumchannel classid="daq.icpcon:AnalogInputMode:0" name="mode">
+            <string classid="parameter.vector:StringVectorParameter:0" name="choices">[±15 mV,±50 mV,±100 mV,±500 mV,±1 V,±2.5 V,±20 mA,4~20 mA,±10 V,±5 V,±1 V,±500 mV,±150 mV,±20 mA,Type J,Type K,Type T,Type E,Type R,Type S,Type B,Type N,Type C,Type L,Type M,Type L DIN43710,0~20 mA]</string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </enumchannel>
+          <floatchannel classid="daq.icpcon:RJOffset:0" name="rj_offset">
+            None
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[°C]]>
+            </string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-99.99</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">99.99</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </floatchannel>
+        </floatchannel>
+        <floatchannel classid="daq.icpcon:AnalogInput:0" last-computed-label="AI8" name="ai8">
+          None
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">4</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[V]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-2.5</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">2.5</float>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#eee]]>
+          </string>
+          <enumchannel classid="daq.icpcon:AnalogInputMode:0" name="mode">
+            <string classid="parameter.vector:StringVectorParameter:0" name="choices">[±15 mV,±50 mV,±100 mV,±500 mV,±1 V,±2.5 V,±20 mA,4~20 mA,±10 V,±5 V,±1 V,±500 mV,±150 mV,±20 mA,Type J,Type K,Type T,Type E,Type R,Type S,Type B,Type N,Type C,Type L,Type M,Type L DIN43710,0~20 mA]</string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </enumchannel>
+          <floatchannel classid="daq.icpcon:RJOffset:0" name="rj_offset">
+            None
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[°C]]>
+            </string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-99.99</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">99.99</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </floatchannel>
+        </floatchannel>
+        <floatchannel classid="daq.icpcon:AnalogInput:0" last-computed-label="AI9" name="ai9">
+          None
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">4</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[V]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-2.5</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">2.5</float>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#eee]]>
+          </string>
+          <enumchannel classid="daq.icpcon:AnalogInputMode:0" name="mode">
+            <string classid="parameter.vector:StringVectorParameter:0" name="choices">[±15 mV,±50 mV,±100 mV,±500 mV,±1 V,±2.5 V,±20 mA,4~20 mA,±10 V,±5 V,±1 V,±500 mV,±150 mV,±20 mA,Type J,Type K,Type T,Type E,Type R,Type S,Type B,Type N,Type C,Type L,Type M,Type L DIN43710,0~20 mA]</string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </enumchannel>
+          <floatchannel classid="daq.icpcon:RJOffset:0" name="rj_offset">
+            None
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[°C]]>
+            </string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-99.99</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">99.99</float>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+          </floatchannel>
+        </floatchannel>
+      </channels>
+      <floatchannel classid="daq.device:FloatChannel:0" name="reference_junction">
+        None
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[°C]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-20.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">80.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+        <floatchannel classid="daq.icpcon:GlobalRJOffset:0" name="offset">
+          None
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[°C]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-99.99</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">99.99</float>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#eee]]>
+          </string>
+        </floatchannel>
+      </floatchannel>
+      <channels classid="daq.device:ChannelGroup:0" label="Digital Outputs" name="do"/>
+    </device>
+  </devices>
+  <devices classid="daq.semtech:SemtechFactory:0" label="Sensors Inc SEMTECH-D and -DS" name="semtech"/>
+  <devices classid="daq.eventsourcedevice:EventSourceFactory:0" label="EventSource over HTTP" name="eventsourcedevice"/>
+  <devices classid="daq.horiba:HoribaFactory:0" label="Horiba Ethernet Systems" name="horiba"/>
+  <devices classid="daq.horibamexa:HoribaMexaFactory:0" label="Horiba MEXA 7000 Systems" name="horibamexa">
+    <device classid="daq.horibamexa.cvs:CVS:0" disabled="False" label="CVS" name="cvs">
+      <container classid="daq.socketdevice:SocketDeviceConfiguration:0" label="Configuration" name="configuration">
+        <string classid="parameter.misc:IPAddress:0" name="address">
+          <![CDATA[192.168.2.163]]>
+        </string>
+      </container>
+      <boolchannel classid="daq.horibamexa.cvs:Online:0" name="online">
+        None
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+      </boolchannel>
+      <boolchannel classid="daq.horibamexa.cvs:BlowerControl:0" name="blower">
+        None
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+      </boolchannel>
+      <boolchannel classid="daq.horibamexa.cvs:PumpControl:0" name="pump">
+        None
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+      </boolchannel>
+      <channels classid="daq.device:ChannelGroup:0" label="Bagging System" name="bag">
+        <enumchannel classid="daq.horibamexa.cvs:BagPairStatus:0" name="all">
+          <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Reset,Purge,Dump,Continuous,Fill,Read,Background Measure,Line Purge]</string>
+        </enumchannel>
+        <enumchannel classid="daq.horibamexa.cvs:BagPairStatus:0" name="pair1">
+          <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Reset,Purge,Dump,Continuous,Fill,Read,Background Measure,Line Purge]</string>
+        </enumchannel>
+        <enumchannel classid="daq.horibamexa.cvs:BagPairStatus:0" name="pair2">
+          <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Reset,Purge,Dump,Continuous,Fill,Read,Background Measure,Line Purge]</string>
+        </enumchannel>
+        <enumchannel classid="daq.horibamexa.cvs:BagPairStatus:0" name="pair3">
+          <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Reset,Purge,Dump,Continuous,Fill,Read,Background Measure,Line Purge]</string>
+        </enumchannel>
+      </channels>
+      <floatchannel classid="daq.device:FloatChannel:0" name="flow">
+        None
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[m³/min]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-1.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">100.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+      </floatchannel>
+      <channels classid="daq.device:ChannelGroup:0" label="Inlet" name="inlet">
+        <floatchannel classid="daq.device:FloatChannel:0" name="temperature">
+          None
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[°C]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">5.0</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">40.0</float>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#eee]]>
+          </string>
+        </floatchannel>
+        <floatchannel classid="daq.device:FloatChannel:0" name="pressure">
+          None
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[kPa]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">70.0</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">100.0</float>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#eee]]>
+          </string>
+        </floatchannel>
+      </channels>
+      <channels classid="daq.device:ChannelGroup:0" label="Unlabeled Channel Group" name="bags">
+        <enumchannel classid="daq.horibamexa.cvs:BagPairStatus:0" name="pair1">
+          <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Reset,Purge,Dump,Continuous,Fill,Read,Background Measure,Line Purge]</string>
+        </enumchannel>
+        <enumchannel classid="daq.horibamexa.cvs:BagPairStatus:0" name="pair2">
+          <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Reset,Purge,Dump,Continuous,Fill,Read,Background Measure,Line Purge]</string>
+        </enumchannel>
+        <enumchannel classid="daq.horibamexa.cvs:BagPairStatus:0" name="pair3">
+          <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Reset,Purge,Dump,Continuous,Fill,Read,Background Measure,Line Purge]</string>
+        </enumchannel>
+      </channels>
+    </device>
+    <device classid="daq.horibamexa.horibamexa:Mexa:0" disabled="False" label="Mexa" name="mexa">
+      <container classid="daq.socketdevice:SocketDeviceConfiguration:0" label="Configuration" name="configuration">
+        <string classid="parameter.misc:IPAddress:0" name="address">
+          <![CDATA[192.168.2.163]]>
+        </string>
+      </container>
+      <boolchannel classid="daq.horibamexa.channel:Online:0" name="online">
+        None
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+      </boolchannel>
+      <enumchannel classid="daq.horibamexa.channel:GlobalStatus:0" name="status">
+        <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Pause,Standby,Cal Sequence,Zero,Span,Measure,Purge,Read Amb 1,Read Samp 1,Read Amb 2,Read Samp 2,Read Amb 3,Read Samp 3]</string>
+      </enumchannel>
+      <channels classid="daq.horibamexa.horibamexa:Analyzers:0" label="Gas Analyzers" name="ana">
+        <container classid="daq.horibamexa.horibamexa:CalibrationTimes:0" name="calibration_time">
+          <phys classid="daq.horibamexa.horibamexa:CalibrationTime:0" name="first_zero">
+            45.0
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[s]]>
+            </string>
+          </phys>
+          <phys classid="daq.horibamexa.horibamexa:CalibrationTime:0" name="span">
+            45.0
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[s]]>
+            </string>
+          </phys>
+          <phys classid="daq.horibamexa.horibamexa:CalibrationTime:0" name="second_zero">
+            10.0
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[s]]>
+            </string>
+          </phys>
+        </container>
+        <channels classid="daq.horibamexa.channel:AnalyzerGroup:0" label="Unlabeled Channel Group" name="line1">
+          <enumchannel classid="daq.horibamexa.channel:LineStatus:0" name="status">
+            <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Pause,Standby,Cal Sequence,Zero,Span,Measure,Purge,Read Amb 1,Read Samp 1,Read Amb 2,Read Samp 2,Read Amb 3,Read Samp 3]</string>
+          </enumchannel>
+          <floatchannel classid="daq.horibamexa.channel:Analyzer:0" label="CO(L) (AIA-721)" name="ana0101">
+            None
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[ppm]]>
+            </string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">2006.0</float>
+              <float classid="parameter.vector:FloatVectorParameter:0" name="span_gasses">[252,2006]</float>
+              <int classid="parameter.value:IntegerParameter:0" name="index">1</int>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+            <enumchannel classid="daq.horibamexa.channel:AnalyzerStatus:0" name="status">
+              <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Pause,Standby,Cal Sequence,Zero,Span,Measure,Purge,Read Amb 1,Read Samp 1,Read Amb 2,Read Samp 2,Read Amb 3,Read Samp 3]</string>
+            </enumchannel>
+            <boolchannel classid="daq.horibamexa.channel:AnalyzerEnabled:0" name="enabled">
+              None
+              <container classid="parameter.misc:Range:0" name="range">
+                <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+                <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+              </container>
+              <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+                <![CDATA[#eee]]>
+              </string>
+            </boolchannel>
+            <enumchannel classid="daq.horibamexa.channel:AnalyzerComponent:0" name="component">
+              <string classid="parameter.vector:StringVectorParameter:0" name="choices">[CO(L)]</string>
+            </enumchannel>
+          </floatchannel>
+          <floatchannel classid="daq.horibamexa.channel:Analyzer:0" label="CO2 (AIA-722)" name="ana0102">
+            None
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[ppm]]>
+            </string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">31000.0</float>
+              <float classid="parameter.vector:FloatVectorParameter:0" name="span_gasses">[31000]</float>
+              <int classid="parameter.value:IntegerParameter:0" name="index">0</int>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+            <enumchannel classid="daq.horibamexa.channel:AnalyzerStatus:0" name="status">
+              <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Pause,Standby,Cal Sequence,Zero,Span,Measure,Purge,Read Amb 1,Read Samp 1,Read Amb 2,Read Samp 2,Read Amb 3,Read Samp 3]</string>
+            </enumchannel>
+            <boolchannel classid="daq.horibamexa.channel:AnalyzerEnabled:0" name="enabled">
+              None
+              <container classid="parameter.misc:Range:0" name="range">
+                <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+                <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+              </container>
+              <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+                <![CDATA[#eee]]>
+              </string>
+            </boolchannel>
+            <enumchannel classid="daq.horibamexa.channel:AnalyzerComponent:0" name="component">
+              <string classid="parameter.vector:StringVectorParameter:0" name="choices">[CO2]</string>
+            </enumchannel>
+          </floatchannel>
+          <floatchannel classid="daq.horibamexa.channel:Analyzer:0" label="CH4 (GFA-720)" name="ana0103">
+            None
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[ppm]]>
+            </string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">49.4</float>
+              <float classid="parameter.vector:FloatVectorParameter:0" name="span_gasses">[49.4]</float>
+              <int classid="parameter.value:IntegerParameter:0" name="index">0</int>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+            <enumchannel classid="daq.horibamexa.channel:AnalyzerStatus:0" name="status">
+              <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Pause,Standby,Cal Sequence,Zero,Span,Measure,Purge,Read Amb 1,Read Samp 1,Read Amb 2,Read Samp 2,Read Amb 3,Read Samp 3]</string>
+            </enumchannel>
+            <boolchannel classid="daq.horibamexa.channel:AnalyzerEnabled:0" name="enabled">
+              None
+              <container classid="parameter.misc:Range:0" name="range">
+                <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+                <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+              </container>
+              <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+                <![CDATA[#eee]]>
+              </string>
+            </boolchannel>
+            <enumchannel classid="daq.horibamexa.channel:AnalyzerComponent:0" name="component">
+              <string classid="parameter.vector:StringVectorParameter:0" name="choices">[CH4]</string>
+            </enumchannel>
+          </floatchannel>
+          <floatchannel classid="daq.horibamexa.channel:Analyzer:0" label="THC (FIA-720)" name="ana0104">
+            None
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[ppm]]>
+            </string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">307.8</float>
+              <float classid="parameter.vector:FloatVectorParameter:0" name="span_gasses">[307.8]</float>
+              <int classid="parameter.value:IntegerParameter:0" name="index">0</int>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+            <enumchannel classid="daq.horibamexa.channel:AnalyzerStatus:0" name="status">
+              <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Pause,Standby,Cal Sequence,Zero,Span,Measure,Purge,Read Amb 1,Read Samp 1,Read Amb 2,Read Samp 2,Read Amb 3,Read Samp 3]</string>
+            </enumchannel>
+            <boolchannel classid="daq.horibamexa.channel:AnalyzerEnabled:0" name="enabled">
+              None
+              <container classid="parameter.misc:Range:0" name="range">
+                <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+                <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+              </container>
+              <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+                <![CDATA[#eee]]>
+              </string>
+            </boolchannel>
+            <enumchannel classid="daq.horibamexa.channel:AnalyzerComponent:0" name="component">
+              <string classid="parameter.vector:StringVectorParameter:0" name="choices">[THC]</string>
+            </enumchannel>
+          </floatchannel>
+          <floatchannel classid="daq.horibamexa.channel:Analyzer:0" label="NOx (CLA-720)" name="ana0105">
+            None
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[ppm]]>
+            </string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">49.3</float>
+              <float classid="parameter.vector:FloatVectorParameter:0" name="span_gasses">[0,0,49.3]</float>
+              <int classid="parameter.value:IntegerParameter:0" name="index">2</int>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+            <enumchannel classid="daq.horibamexa.channel:AnalyzerStatus:0" name="status">
+              <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Pause,Standby,Cal Sequence,Zero,Span,Measure,Purge,Read Amb 1,Read Samp 1,Read Amb 2,Read Samp 2,Read Amb 3,Read Samp 3]</string>
+            </enumchannel>
+            <boolchannel classid="daq.horibamexa.channel:AnalyzerEnabled:0" name="enabled">
+              None
+              <container classid="parameter.misc:Range:0" name="range">
+                <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+                <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+              </container>
+              <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+                <![CDATA[#eee]]>
+              </string>
+            </boolchannel>
+            <enumchannel classid="daq.horibamexa.channel:AnalyzerComponent:0" name="component">
+              <string classid="parameter.vector:StringVectorParameter:0" name="choices">[NO,NOx]</string>
+            </enumchannel>
+          </floatchannel>
+        </channels>
+        <channels classid="daq.horibamexa.channel:AnalyzerGroup:0" label="Unlabeled Channel Group" name="line2">
+          <enumchannel classid="daq.horibamexa.channel:LineStatus:0" name="status">
+            <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Pause,Standby,Cal Sequence,Zero,Span,Measure,Purge,Read Amb 1,Read Samp 1,Read Amb 2,Read Samp 2,Read Amb 3,Read Samp 3]</string>
+          </enumchannel>
+          <floatchannel classid="daq.horibamexa.channel:Analyzer:0" label="CO(L) (AIA-721)" name="ana0201">
+            None
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[ppm]]>
+            </string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">84.5</float>
+              <float classid="parameter.vector:FloatVectorParameter:0" name="span_gasses">[9.38,51.3,84.5]</float>
+              <int classid="parameter.value:IntegerParameter:0" name="index">2</int>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+            <enumchannel classid="daq.horibamexa.channel:AnalyzerStatus:0" name="status">
+              <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Pause,Standby,Cal Sequence,Zero,Span,Measure,Purge,Read Amb 1,Read Samp 1,Read Amb 2,Read Samp 2,Read Amb 3,Read Samp 3]</string>
+            </enumchannel>
+            <boolchannel classid="daq.horibamexa.channel:AnalyzerEnabled:0" name="enabled">
+              None
+              <container classid="parameter.misc:Range:0" name="range">
+                <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+                <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+              </container>
+              <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+                <![CDATA[#eee]]>
+              </string>
+            </boolchannel>
+            <enumchannel classid="daq.horibamexa.channel:AnalyzerComponent:0" name="component">
+              <string classid="parameter.vector:StringVectorParameter:0" name="choices">[CO(L)]</string>
+            </enumchannel>
+          </floatchannel>
+          <floatchannel classid="daq.horibamexa.channel:Analyzer:0" label="CO2 (AIA-722)" name="ana0202">
+            None
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[ppm]]>
+            </string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">20000.0</float>
+              <float classid="parameter.vector:FloatVectorParameter:0" name="span_gasses">[20000,50400]</float>
+              <int classid="parameter.value:IntegerParameter:0" name="index">0</int>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+            <enumchannel classid="daq.horibamexa.channel:AnalyzerStatus:0" name="status">
+              <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Pause,Standby,Cal Sequence,Zero,Span,Measure,Purge,Read Amb 1,Read Samp 1,Read Amb 2,Read Samp 2,Read Amb 3,Read Samp 3]</string>
+            </enumchannel>
+            <boolchannel classid="daq.horibamexa.channel:AnalyzerEnabled:0" name="enabled">
+              None
+              <container classid="parameter.misc:Range:0" name="range">
+                <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+                <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+              </container>
+              <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+                <![CDATA[#eee]]>
+              </string>
+            </boolchannel>
+            <enumchannel classid="daq.horibamexa.channel:AnalyzerComponent:0" name="component">
+              <string classid="parameter.vector:StringVectorParameter:0" name="choices">[CO2]</string>
+            </enumchannel>
+          </floatchannel>
+          <floatchannel classid="daq.horibamexa.channel:Analyzer:0" label="CH4 (GFA-720LE)" name="ana0203">
+            None
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[ppm]]>
+            </string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">4.74</float>
+              <float classid="parameter.vector:FloatVectorParameter:0" name="span_gasses">[4.74,0,16.9]</float>
+              <int classid="parameter.value:IntegerParameter:0" name="index">0</int>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+            <enumchannel classid="daq.horibamexa.channel:AnalyzerStatus:0" name="status">
+              <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Pause,Standby,Cal Sequence,Zero,Span,Measure,Purge,Read Amb 1,Read Samp 1,Read Amb 2,Read Samp 2,Read Amb 3,Read Samp 3]</string>
+            </enumchannel>
+            <boolchannel classid="daq.horibamexa.channel:AnalyzerEnabled:0" name="enabled">
+              None
+              <container classid="parameter.misc:Range:0" name="range">
+                <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+                <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+              </container>
+              <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+                <![CDATA[#eee]]>
+              </string>
+            </boolchannel>
+            <enumchannel classid="daq.horibamexa.channel:AnalyzerComponent:0" name="component">
+              <string classid="parameter.vector:StringVectorParameter:0" name="choices">[CH4]</string>
+            </enumchannel>
+          </floatchannel>
+          <floatchannel classid="daq.horibamexa.channel:Analyzer:0" label="THC (FIA-726LE)" name="ana0204">
+            None
+            <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+            <string classid="parameter.physical:Unit:0" name="unit">
+              <![CDATA[ppm]]>
+            </string>
+            <container classid="parameter.misc:Range:0" name="range">
+              <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+              <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">14.25</float>
+              <float classid="parameter.vector:FloatVectorParameter:0" name="span_gasses">[14.25,42]</float>
+              <int classid="parameter.value:IntegerParameter:0" name="index">0</int>
+            </container>
+            <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+              <![CDATA[#eee]]>
+            </string>
+            <enumchannel classid="daq.horibamexa.channel:AnalyzerStatus:0" name="status">
+              <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Pause,Standby,Cal Sequence,Zero,Span,Measure,Purge,Read Amb 1,Read Samp 1,Read Amb 2,Read Samp 2,Read Amb 3,Read Samp 3]</string>
+            </enumchannel>
+            <boolchannel classid="daq.horibamexa.channel:AnalyzerEnabled:0" name="enabled">
+              None
+              <container classid="parameter.misc:Range:0" name="range">
+                <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+                <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+              </container>
+              <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+                <![CDATA[#eee]]>
+              </string>
+            </boolchannel>
+            <enumchannel classid="daq.horibamexa.channel:AnalyzerComponent:0" name="component">
+              <string classid="parameter.vector:StringVectorParameter:0" name="choices">[THC]</string>
+            </enumchannel>
+          </floatchannel>
+        </channels>
+      </channels>
+      <channels classid="daq.device:ChannelGroup:0" label="Temperature Control System" name="tcs">
+        <floatchannel classid="daq.horibamexa.channel:TemperatureControlChannel:0" name="tcs0103">
+          None
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[°C]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-1.0</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#eee]]>
+          </string>
+        </floatchannel>
+        <floatchannel classid="daq.horibamexa.channel:TemperatureControlChannel:0" name="tcs0104">
+          None
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[°C]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-1.0</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#eee]]>
+          </string>
+        </floatchannel>
+        <floatchannel classid="daq.horibamexa.channel:TemperatureControlChannel:0" name="tcs0105">
+          None
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[°C]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-1.0</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#eee]]>
+          </string>
+        </floatchannel>
+      </channels>
+    </device>
+  </devices>
+  <devices classid="daq.voltech:VoltechFactory:0" label="Voltech PM6000" name="voltech"/>
+  <devices classid="daq.slaveecu:SlaveECULoggerFactory:0" label="Slave ECU Logging Program" name="slaveecu"/>
+  <devices classid="daq.ecu:ECUFactory:0" label="CAN-Interfaced ECU" name="ecu"/>
+</DAQ>

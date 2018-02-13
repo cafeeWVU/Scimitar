@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DAQ classid="daq:DAQ:0" name="daq">
+  <devices classid="daq.mdap:MDAPFactory:0" label="Ethernet Interfaced TC/DAQ Devices" name="mdap"/>
+  <devices classid="daq.serial:SerialFactory:0" label="Serial Port Interfaced Devices" name="serial"/>
+  <devices classid="daq.horibamexa:HoribaMexaFactory:0" label="Horiba MEXA 7000 Systems" name="horibamexa"/>
+  <devices classid="daq.ni:NIDAQmxFactory:0" label="&lt;span color=&quot;#aaa&quot;&gt;National Instruments DAQmx
+&lt;span size=&quot;small&quot; style=&quot;italic&quot;&gt;NI DAQmx not installed or not working.&lt;/span&gt;&lt;/span&gt;" name="nidaqmx"/>
+  <devices classid="daq.bardacdriveweb:BardacDriveWebFactory:0" label="Bardac 'drive.web' Devices" name="bardac"/>
+  <devices classid="daq.elap:ELAPFactory:0" label="Cleanroom Remote Access (ELAP)" name="elap"/>
+  <devices classid="daq.sierrabg3:SierraFactory:0" label="Sierra BG3 System" name="sierrabg3"/>
+  <devices classid="daq.labjack:LabJackFactory:0" label="LabJack Devices (Ethernet Only)" name="labjack"/>
+  <devices classid="daq.webtc:WebTCFactory:0" label="WEB-TC Devices" name="webtc"/>
+  <devices classid="daq.jnior:JNIORFactory:0" label="Integ Process Group JNIOR Devices" name="jnior"/>
+  <devices classid="daq.weather.weather:NationalWeatherServiceFactory:0" label="Weather.gov XML Feeds" name="weather"/>
+  <devices classid="daq.nosemonitor:NoseFactory:0" label="Purechoice Nose Monitor IAQ" name="nosemonitor"/>
+  <devices classid="daq.voltech:VoltechFactory:0" label="Voltech PM6000" name="voltech"/>
+  <devices classid="daq.xitron:XitronFactory:0" label="Xitron Power Analyzers via Prologix GPIB-Ethernet" name="gpib"/>
+  <devices classid="daq.adam:AdvantechADAMFactory:0" label="Advantech ADAM 6000 Series Devices" name="adam"/>
+  <devices classid="daq.icpcon:ICPCONFactory:0" label="ICP Devices" name="icpcon"/>
+  <devices classid="daq.semtech:SemtechFactory:0" label="Sensors Inc SEMTECH-D and -DS" name="semtech"/>
+  <devices classid="daq.eventsourcedevice:EventSourceFactory:0" label="EventSource over HTTP" name="eventsourcedevice"/>
+  <devices classid="daq.slaveecu:SlaveECULoggerFactory:0" label="Slave ECU Logging Program" name="slaveecu"/>
+  <devices classid="daq.mkstoolweb:MKSToolWebFactory:0" label="Multigas FTIR (MKS ToolWeb)" name="toolweb"/>
+  <devices classid="daq.ecu:ECUFactory:0" label="CAN-Interfaced ECU" name="ecu"/>
+  <devices classid="daq.mkstoolweb:MKSToolWebFactory:0" label="Multigas FTIR (MKS ToolWeb)" name="mkstoolweb"/>
+</DAQ>

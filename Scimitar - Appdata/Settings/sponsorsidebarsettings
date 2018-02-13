@@ -1,0 +1,6 @@
+comment,THIS FILE IS NOT DESIGNED TO BE EDITED MANUALLY
+comment,This file stores the sidebar settings.
+sidebar_width,992
+sidebar_visible,1
+item,lab.ambient.temperature
+item_property,minigraph-visible,False

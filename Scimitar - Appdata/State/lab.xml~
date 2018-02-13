@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Lab classid="lab:Lab:0" file-version="0.0" name="lab" node="0026B9E46A04" platform="linux2" platform-version="#50-Ubuntu SMP Tue Dec 3 01:24:59 UTC 2013" python-version="2.7.4 (default, Sep 26 2013, 03:20:26) 
+[GCC 4.7.3]" scimitar-version="0.56" written="2014-07-28T12:01:06.689349">
+  <container classid="parameter.container:ContainerParameter:0" name="dyno">
+    <timeseries classid="parameter.timeseries:BooleanOutputParameter:0" label="Dyno Enabled" name="enable">
+      False
+      <container classid="parameter.misc:Range:0" name="range">
+        <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-0.5</float>
+        <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.5</float>
+      </container>
+      <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+        <![CDATA[#eee]]>
+      </string>
+      <bool classid="parameter.value:BooleanParameter:0" label="Invert Source" name="invert">False</bool>
+      <binding classid="daq.binding:DAQBindingParameter:0" name="source">virtual</binding>
+      <timeseries classid="parameter.timeseries:BooleanOutputParameter:0" name="watchdog">
+        False
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-0.5</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.5</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+        <bool classid="parameter.value:BooleanParameter:0" label="Invert Source" name="invert">False</bool>
+        <binding classid="daq.binding:DAQBindingParameter:0" name="source">daq.bardac.device_192_168_2_127.reg5107</binding>
+      </timeseries>
+      <program classid="parameter.programmable:ProgrammableParameter:0" name="toggle_program">
+        <![CDATA[def initalize(self):
+    """This function is called once when the parameter is initalized.
+    It should be used to create variables."""
+    pass #Insert your code here
+def update(self,counter):
+    """This function is called once per lab clock (100mS)."""
+    if self.parent.value is None:
+	self.parent.value = False
+    elif self.parent.value:
+	self.parent.watchdog.value = counter % 6 < 3]]>
+      </program>
+    </timeseries>
+    <timeseries classid="parameter.timeseries:TimeSeriesScaledParameter:0" name="speed">
+      0.0
+      <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+      <string classid="parameter.physical:Unit:0" name="unit">
+        <![CDATA[RPM]]>
+      </string>
+      <container classid="parameter.misc:Range:0" name="range">
+        <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+        <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1500.0</float>
+      </container>
+      <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+        <![CDATA[#eee]]>
+      </string>
+      <binding classid="daq.binding:DAQBindingParameter:0" name="source">daq.bardac.device_192_168_2_127.reg5050</binding>
+      <container classid="parameter.timeseries:AlarmPoints:0" name="alarm">
+        <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+        <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+        <bool classid="parameter.value:BooleanParameter:0" name="if_unknown">True</bool>
+        <float classid="parameter.value:FloatParameter:0" name="max_delta">None</float>
+      </container>
+      <float classid="parameter.value:FloatParameter:0" name="offset">0.0</float>
+      <float classid="parameter.value:FloatParameter:0" name="scale">8.51</float>
+      <timeseries classid="parameter.timeseries:TimeSeriesMeasurementParameter:0" description="0.01 = Fault on A, 0.02 = Fault on B, 0.03 = Fault on A and B, 0.04 = Comms Fault" name="encoder_error">
+        0.0
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[%]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-1.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="use_source">True</bool>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+        <binding classid="daq.binding:DAQBindingParameter:0" name="source">daq.bardac.device_192_168_2_127.reg5046</binding>
+        <container classid="parameter.timeseries:AlarmPoints:0" name="alarm">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">0.005</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="if_unknown">False</bool>
+          <float classid="parameter.value:FloatParameter:0" name="max_delta">None</float>
+        </container>
+      </timeseries>
+    </timeseries>
+    <timeseries classid="parameter.control:ControlParameter:0" label="Lebow" name="torque">
+      -15.866661580000002
+      <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+      <string classid="parameter.physical:Unit:0" name="unit">
+        <![CDATA[ft-lb]]>
+      </string>
+      <container classid="parameter.misc:Range:0" name="range">
+        <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-75.0</float>
+        <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1000.0</float>
+      </container>
+      <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+        <![CDATA[#800080]]>
+      </string>
+      <binding classid="daq.binding:DAQBindingParameter:0" name="source">daq.bardac.device_192_168_2_127.reg5117</binding>
+      <container classid="parameter.timeseries:AlarmPoints:0" name="alarm">
+        <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+        <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+        <bool classid="parameter.value:BooleanParameter:0" name="if_unknown">True</bool>
+        <float classid="parameter.value:FloatParameter:0" name="max_delta">None</float>
+        <float classid="parameter.value:FloatParameter:0" name="loop_closure_tolerance">None</float>
+      </container>
+      <container classid="parameter.calibration:TraceableCalibration:0" name="calibration">
+        <float classid="parameter.calibration:Coefficients:0" name="coefficients">[0,113.333297]</float>
+        <value classid="parameter.datetime:DateTimeParameter:0" name="performed">None</value>
+        <value classid="parameter.calibration:CalibrationPointPairs:0" name="points">[]</value>
+        <container classid="parameter.container:ContainerParameter:0" name="goodness_of_fit">
+          <float classid="parameter.value:FloatParameter:0" label="R²" name="r2">None</float>
+          <float classid="parameter.value:FloatParameter:0" label="Mean Squared Error" name="mse">None</float>
+        </container>
+        <string classid="parameter.value:StringParameter:0" label="Operator" name="operator"/>
+        <container classid="parameter.container:ContainerParameter:0" label="Calibration Reference" name="reference"/>
+      </container>
+      <timeseries classid="parameter.timeseries:TimeSeriesOutputParameter:0" name="setpoint">
+        20.049999999999997
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[ft-lb]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">-112.5</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1000.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#cf02cf]]>
+        </string>
+        <binding classid="daq.binding:DAQBindingParameter:0" name="source">daq.bardac.device_192_168_2_127.reg5034</binding>
+        <float classid="parameter.value:FloatParameter:0" name="offset">0.0</float>
+        <float classid="parameter.value:FloatParameter:0" name="scale">5.0</float>
+      </timeseries>
+      <float classid="parameter.calibration:Coefficients:0" name="control_curve">
+        [18.3731734238,-3.2300321848,0.698394354975,-0.0789086660034,0.00504754381231,-0.000180325737079,3.63317899617e-06,-3.86857259349e-08,1.69486046185e-10]
+        <value classid="parameter.datetime:DateTimeParameter:0" name="changed">2014-07-24T17:05:10.394608-04:00</value>
+        <string classid="parameter.value:StringParameter:0" name="test_id">
+          <![CDATA[L0001-003-63]]>
+        </string>
+      </float>
+      <program classid="parameter.programmable:ProgrammableParameter:0" name="control_program">
+        <![CDATA[def initalize(self):
+    """This function is called once when the parameter is initalized.
+    It should be used to create variables."""
+
+    pass #Insert your code here
+
+
+def update(self,counter):
+    """This function is called once per lab clock (100mS)."""
+
+
+    torque = self.parent
+    dyno = torque.parent
+    vehicle = torque.parent.parent.vehicle
+    desired_torque = torque.control_curve.apply(vehicle.speed.value or 0)
+    windage_loss = torque.power_absorber.windage_loss.apply(dyno.speed.value or 0)
+
+    if desired_torque > 0:
+        torque.setpoint = desired_torque + windage_loss
+    else:
+        torque.setpoint = desired_torque]]>
+      </program>
+      <timeseries classid="parameter.timeseries:TimeSeriesScaledParameter:0" name="motor">
+        -0.01125
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[ft-lb]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">112.5</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+        <binding classid="daq.binding:DAQBindingParameter:0" name="source">daq.bardac.device_192_168_2_127.reg5118</binding>
+        <container classid="parameter.timeseries:AlarmPoints:0" name="alarm">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="if_unknown">True</bool>
+          <float classid="parameter.value:FloatParameter:0" name="max_delta">None</float>
+        </container>
+        <float classid="parameter.value:FloatParameter:0" name="offset">0.0</float>
+        <float classid="parameter.value:FloatParameter:0" name="scale">1.125</float>
+      </timeseries>
+      <timeseries classid="parameter.timeseries:CalibratedParameter:0" label="PA" name="power_absorber">
+        -1.75
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[ft-lb]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">500.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+        <binding classid="daq.binding:DAQBindingParameter:0" name="source">daq.bardac.device_192_168_2_127.reg5116</binding>
+        <container classid="parameter.timeseries:AlarmPoints:0" name="alarm">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="if_unknown">True</bool>
+          <float classid="parameter.value:FloatParameter:0" name="max_delta">None</float>
+        </container>
+        <container classid="parameter.calibration:TraceableCalibration:0" name="calibration">
+          <float classid="parameter.calibration:Coefficients:0" name="coefficients">[0,5]</float>
+          <value classid="parameter.datetime:DateTimeParameter:0" name="performed">None</value>
+          <value classid="parameter.calibration:CalibrationPointPairs:0" name="points">[]</value>
+          <container classid="parameter.container:ContainerParameter:0" name="goodness_of_fit">
+            <float classid="parameter.value:FloatParameter:0" label="R²" name="r2">None</float>
+            <float classid="parameter.value:FloatParameter:0" label="Mean Squared Error" name="mse">None</float>
+          </container>
+          <string classid="parameter.value:StringParameter:0" label="Operator" name="operator"/>
+          <container classid="parameter.container:ContainerParameter:0" label="Calibration Reference" name="reference">
+            <string classid="parameter.value:StringParameter:0" name="model"/>
+            <string classid="parameter.value:StringParameter:0" name="serial"/>
+          </container>
+        </container>
+        <container classid="parameter.container:ContainerParameter:0" name="transducer">
+          <string classid="parameter.value:StringParameter:0" name="model"/>
+          <string classid="parameter.value:StringParameter:0" name="serial"/>
+        </container>
+        <float classid="parameter.calibration:Coefficients:0" name="windage_loss">[1.72112536397,0.00380070494068,-3.26399387684e-06,1.31236840696e-09]</float>
+      </timeseries>
+    </timeseries>
+    <timeseries classid="parameter.programmable:ProgrammableTimeseries:0" name="power">
+      -0.0
+      <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+      <string classid="parameter.physical:Unit:0" name="unit">
+        <![CDATA[hp]]>
+      </string>
+      <container classid="parameter.misc:Range:0" name="range">
+        <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+        <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+      </container>
+      <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+        <![CDATA[#8a1eff]]>
+      </string>
+      <program classid="parameter.programmable:TimeseriesProgram:0" name="program">
+        <![CDATA[def initalize(self):
+    """This function is called once when the parameter is initalized.
+    It should be used to create variables (e.g. to initalize filters)."""
+    pass #Insert your code here
+def update(self,counter):
+    """This function is called once per lab clock (100mS).
+    The value it returns becomes the parameter's value."""
+    dyno = self.parent
+    try:
+        return dyno.speed.value*dyno.torque.value/5252
+    except TypeError:
+        return None]]>
+      </program>
+    </timeseries>
+    <phys classid="parameter.physical:PhysicalQuantity:0" name="roller_diameter">
+      19.75
+      <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+      <string classid="parameter.physical:Unit:0" name="unit">
+        <![CDATA[in]]>
+      </string>
+    </phys>
+    <phys classid="parameter.physical:PhysicalQuantity:0" name="pa_gear_ratio">
+      2.04
+      <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+      <string classid="parameter.physical:Unit:0" name="unit"/>
+    </phys>
+    <phys classid="parameter.physical:PhysicalQuantity:0" name="simulated_inertia">
+      6197.6
+      <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+      <string classid="parameter.physical:Unit:0" name="unit">
+        <![CDATA[lb]]>
+      </string>
+    </phys>
+    <container classid="parameter.container:ContainerParameter:0" name="temperature">
+      <timeseries classid="parameter.timeseries:TimeSeriesScaledParameter:0" label="Dyno Temp" name="transfer_case">
+        32.77
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[°C]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">10.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">50.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#ebb5d2]]>
+        </string>
+        <binding classid="daq.binding:DAQBindingParameter:0" name="source">daq.bardac.device_192_168_2_127.reg5119</binding>
+        <container classid="parameter.timeseries:AlarmPoints:0" name="alarm">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="if_unknown">True</bool>
+          <float classid="parameter.value:FloatParameter:0" name="max_delta">None</float>
+        </container>
+        <float classid="parameter.value:FloatParameter:0" name="offset">0.0</float>
+        <float classid="parameter.value:FloatParameter:0" name="scale">1.0</float>
+      </timeseries>
+    </container>
+  </container>
+  <container classid="parameter.container:ContainerParameter:0" name="vehicle">
+    <timeseries classid="parameter.programmable:ProgrammableTimeseries:0" name="speed">
+      0.0
+      <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+      <string classid="parameter.physical:Unit:0" name="unit">
+        <![CDATA[MPH]]>
+      </string>
+      <container classid="parameter.misc:Range:0" name="range">
+        <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+        <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">60.0</float>
+      </container>
+      <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+        <![CDATA[#ffffff]]>
+      </string>
+      <program classid="parameter.programmable:TimeseriesProgram:0" name="program">
+        <![CDATA[def initalize(self):
+    """This function is called once when the parameter is initalized.
+    It should be used to create variables (e.g. to initalize filters)."""
+    pass #Insert your code here
+def update(self,counter):
+    """This function is called once per lab clock (100mS).
+    The value it returns becomes the parameter's value."""
+    dyno = self.parent.parent.dyno
+    try:
+        return (dyno.speed.value*19.75*math.pi/12/5280*60)/dyno.pa_gear_ratio.value
+    except TypeError:
+        return None]]>
+      </program>
+      <timeseries classid="parameter.timeseries:TimeSeriesScaledParameter:0" name="setpoint">
+        None
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[MPH]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">60.0</float>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#faff00]]>
+        </string>
+        <binding classid="daq.binding:DAQBindingParameter:0" name="source">virtual</binding>
+        <container classid="parameter.timeseries:AlarmPoints:0" name="alarm">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="if_unknown">False</bool>
+          <float classid="parameter.value:FloatParameter:0" name="max_delta">None</float>
+        </container>
+        <float classid="parameter.value:FloatParameter:0" name="offset">0.0</float>
+        <float classid="parameter.value:FloatParameter:0" name="scale">1.0</float>
+        <float classid="parameter.vector:FloatVectorParameter:0" name="cycle">
+          [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+          <container classid="parameter.container:ContainerParameter:0" name="file">
+            <value classid="parameter.datetime:DateTimeParameter:0" name="loaded">2014-03-04T17:25:45.055404-05:00</value>
+            <string classid="parameter.value:StringParameter:0" name="filename">
+              <![CDATA[/home/engineer/Desktop/software test.cyc]]>
+            </string>
+            <value classid="parameter.datetime:DateTimeParameter:0" name="modified">2014-03-04T17:24:59.888944-05:00</value>
+          </container>
+        </float>
+      </timeseries>
+    </timeseries>
+    <phys classid="parameter.physical:PhysicalQuantity:0" name="test_weight">
+      6200.0
+      <int classid="parameter.physical:DisplayPlaces:0" name="display_places">0</int>
+      <string classid="parameter.physical:Unit:0" name="unit">
+        <![CDATA[lb]]>
+      </string>
+    </phys>
+    <container classid="parameter.container:ContainerParameter:0" name="coastdown">
+      <container classid="parameter.container:ContainerParameter:0" name="desired">
+        <phys classid="parameter.physical:PhysicalQuantity:0" name="a">
+          67.04
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[lbf]]>
+          </string>
+        </phys>
+        <phys classid="parameter.physical:PhysicalQuantity:0" name="b">
+          0.6414
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">5</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[lbf/mph]]>
+          </string>
+        </phys>
+        <phys classid="parameter.physical:PhysicalQuantity:0" name="c">
+          0.08574
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">5</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[lbf/mph^2]]>
+          </string>
+        </phys>
+        <phys classid="parameter.physical:PhysicalQuantity:0" name="air_density">
+          1.202
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">3</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[kg/m³]]>
+          </string>
+        </phys>
+      </container>
+    </container>
+    <string classid="parameter.vin:VehicleIdentificationNumber:0" name="vin">
+      <![CDATA[1GTW7GCG3C1111776]]>
+    </string>
+  </container>
+  <container classid="parameter.container:ContainerParameter:0" name="emission">
+    <container classid="parameter.container:ContainerParameter:0" name="gas">
+      <timeseries classid="parameter.timeseries:TimeSeriesMeasurementParameter:0" name="co">
+        1.9131
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[ppm]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">2006.0</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="use_source">True</bool>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#4ce8ec]]>
+        </string>
+        <binding classid="daq.binding:DAQBindingParameter:0" name="source">daq.horibamexa.mexa.ana.line1.ana0101</binding>
+        <container classid="parameter.timeseries:AlarmPoints:0" name="alarm">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="if_unknown">True</bool>
+          <float classid="parameter.value:FloatParameter:0" name="max_delta">None</float>
+        </container>
+      </timeseries>
+      <timeseries classid="parameter.timeseries:TimeSeriesMeasurementParameter:0" name="co2">
+        382.43
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[ppm]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">31000.0</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="use_source">True</bool>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#4ae12e]]>
+        </string>
+        <binding classid="daq.binding:DAQBindingParameter:0" name="source">daq.horibamexa.mexa.ana.line1.ana0102</binding>
+        <container classid="parameter.timeseries:AlarmPoints:0" name="alarm">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="if_unknown">True</bool>
+          <float classid="parameter.value:FloatParameter:0" name="max_delta">None</float>
+        </container>
+      </timeseries>
+      <timeseries classid="parameter.timeseries:TimeSeriesMeasurementParameter:0" name="ch4">
+        1.966
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[ppm]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">49.4</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="use_source">True</bool>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+        <binding classid="daq.binding:DAQBindingParameter:0" name="source">daq.horibamexa.mexa.ana.line1.ana0103</binding>
+        <container classid="parameter.timeseries:AlarmPoints:0" name="alarm">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="if_unknown">True</bool>
+          <float classid="parameter.value:FloatParameter:0" name="max_delta">None</float>
+        </container>
+      </timeseries>
+      <timeseries classid="parameter.timeseries:TimeSeriesMeasurementParameter:0" name="thc">
+        3.611
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[ppm]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">307.8</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="use_source">True</bool>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eca119]]>
+        </string>
+        <binding classid="daq.binding:DAQBindingParameter:0" name="source">daq.horibamexa.mexa.ana.line1.ana0104</binding>
+        <container classid="parameter.timeseries:AlarmPoints:0" name="alarm">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="if_unknown">True</bool>
+          <float classid="parameter.value:FloatParameter:0" name="max_delta">None</float>
+        </container>
+        <float classid="parameter.value:NonNegativeFloatParameter:0" name="methane_response">1.11</float>
+      </timeseries>
+      <timeseries classid="parameter.timeseries:TimeSeriesMeasurementParameter:0" label="NOx" name="nox">
+        0.4994
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[ppm]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">49.3</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="use_source">True</bool>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#2d8beb]]>
+        </string>
+        <binding classid="daq.binding:DAQBindingParameter:0" name="source">daq.horibamexa.mexa.ana.line1.ana0105</binding>
+        <container classid="parameter.timeseries:AlarmPoints:0" name="alarm">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="if_unknown">True</bool>
+          <float classid="parameter.value:FloatParameter:0" name="max_delta">None</float>
+        </container>
+      </timeseries>
+    </container>
+    <container classid="parameter.container:ContainerParameter:0" name="dilution">
+      <timeseries classid="parameter.timeseries:TimeSeriesMeasurementParameter:0" name="flowrate">
+        0.0
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">2</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[m³/min]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">40.0</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="use_source">False</bool>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#fb44ff]]>
+        </string>
+        <binding classid="daq.binding:DAQBindingParameter:0" name="source">daq.horibamexa.cvs.flow</binding>
+        <container classid="parameter.timeseries:AlarmPoints:0" name="alarm">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="if_unknown">True</bool>
+          <float classid="parameter.value:FloatParameter:0" name="max_delta">None</float>
+        </container>
+        <timeseries classid="parameter.timeseries:TimeSeriesMeasurementParameter:0" name="inlet_temperature">
+          26.175
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[°C]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">5.0</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">40.0</float>
+            <bool classid="parameter.value:BooleanParameter:0" name="use_source">True</bool>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#e12d6c]]>
+          </string>
+          <binding classid="daq.binding:DAQBindingParameter:0" name="source">daq.horibamexa.cvs.inlet.temperature</binding>
+          <container classid="parameter.timeseries:AlarmPoints:0" name="alarm">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+            <bool classid="parameter.value:BooleanParameter:0" name="if_unknown">True</bool>
+            <float classid="parameter.value:FloatParameter:0" name="max_delta">None</float>
+          </container>
+        </timeseries>
+        <timeseries classid="parameter.timeseries:TimeSeriesMeasurementParameter:0" name="inlet_pressure">
+          97.699
+          <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+          <string classid="parameter.physical:Unit:0" name="unit">
+            <![CDATA[kPa]]>
+          </string>
+          <container classid="parameter.misc:Range:0" name="range">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">70.0</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">100.0</float>
+            <bool classid="parameter.value:BooleanParameter:0" name="use_source">True</bool>
+          </container>
+          <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+            <![CDATA[#9e29c5]]>
+          </string>
+          <binding classid="daq.binding:DAQBindingParameter:0" name="source">daq.horibamexa.cvs.inlet.pressure</binding>
+          <container classid="parameter.timeseries:AlarmPoints:0" name="alarm">
+            <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+            <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+            <bool classid="parameter.value:BooleanParameter:0" name="if_unknown">True</bool>
+            <float classid="parameter.value:FloatParameter:0" name="max_delta">None</float>
+          </container>
+        </timeseries>
+      </timeseries>
+    </container>
+  </container>
+  <container classid="parameter.container:ContainerParameter:0" name="ambient">
+    <timeseries classid="parameter.timeseries:TimeSeriesScaledParameter:0" name="temperature">
+      78.4904
+      <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+      <string classid="parameter.physical:Unit:0" name="unit">
+        <![CDATA[°F]]>
+      </string>
+      <container classid="parameter.misc:Range:0" name="range">
+        <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">40.0</float>
+        <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">100.0</float>
+      </container>
+      <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+        <![CDATA[#eee]]>
+      </string>
+      <binding classid="daq.binding:DAQBindingParameter:0" name="source">daq.icpcon.PET7019Z_6483a5.ai.ai8</binding>
+      <container classid="parameter.timeseries:AlarmPoints:0" name="alarm">
+        <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+        <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+        <bool classid="parameter.value:BooleanParameter:0" name="if_unknown">True</bool>
+        <float classid="parameter.value:FloatParameter:0" name="max_delta">None</float>
+      </container>
+      <float classid="parameter.value:FloatParameter:0" name="offset">-4.0</float>
+      <float classid="parameter.value:FloatParameter:0" name="scale">171.0</float>
+    </timeseries>
+    <timeseries classid="parameter.timeseries:TimeSeriesScaledParameter:0" name="humidity">
+      50.13999999999999
+      <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+      <string classid="parameter.physical:Unit:0" name="unit">
+        <![CDATA[%]]>
+      </string>
+      <container classid="parameter.misc:Range:0" name="range">
+        <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+        <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">100.0</float>
+      </container>
+      <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+        <![CDATA[#eee]]>
+      </string>
+      <binding classid="daq.binding:DAQBindingParameter:0" name="source">daq.icpcon.PET7019Z_6483a5.ai.ai9</binding>
+      <container classid="parameter.timeseries:AlarmPoints:0" name="alarm">
+        <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+        <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+        <bool classid="parameter.value:BooleanParameter:0" name="if_unknown">True</bool>
+        <float classid="parameter.value:FloatParameter:0" name="max_delta">None</float>
+      </container>
+      <float classid="parameter.value:FloatParameter:0" name="offset">0.0</float>
+      <float classid="parameter.value:FloatParameter:0" name="scale">100.0</float>
+    </timeseries>
+    <timeseries classid="parameter.programmable:ProgrammableTimeseries:0" name="pressure">
+      97.22740402986011
+      <int classid="parameter.physical:DisplayPlaces:0" name="display_places">1</int>
+      <string classid="parameter.physical:Unit:0" name="unit">
+        <![CDATA[kPa]]>
+      </string>
+      <container classid="parameter.misc:Range:0" name="range">
+        <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">0.0</float>
+        <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">1.0</float>
+      </container>
+      <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+        <![CDATA[#eee]]>
+      </string>
+      <program classid="parameter.programmable:TimeseriesProgram:0" name="program">
+        <![CDATA[def initalize(self):
+    """This function is called once when the parameter is initalized.
+    It should be used to create variables (e.g. to initalize filters)."""
+
+    import util.altitude
+
+    self.baro_formula = util.altitude.barometric_formula
+
+
+def update(self,counter):
+    """This function is called once per lab clock (100mS).
+    The value it returns becomes the parameter's value."""
+
+    try:
+        return self.baro_formula(self.sea_level_pressure.value, 288.15, self.elevation.value)/1000.0
+    except TypeError:
+        return None]]>
+      </program>
+      <timeseries classid="parameter.timeseries:TimeSeriesMeasurementParameter:0" name="sea_level_pressure">
+        100760.0
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">-1</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[Pa]]>
+        </string>
+        <container classid="parameter.misc:Range:0" name="range">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">90000.0</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">120000.0</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="use_source">True</bool>
+        </container>
+        <string classid="parameter.misc:ColorParameter:0" name="graph_color">
+          <![CDATA[#eee]]>
+        </string>
+        <binding classid="daq.binding:DAQBindingParameter:0" name="source">daq.weather.kmgw.sea_level_pressure</binding>
+        <container classid="parameter.timeseries:AlarmPoints:0" name="alarm">
+          <float classid="parameter.value:FloatParameter:0" label="Minimum" name="min">None</float>
+          <float classid="parameter.value:FloatParameter:0" label="Maximum" name="max">None</float>
+          <bool classid="parameter.value:BooleanParameter:0" name="if_unknown">True</bool>
+          <float classid="parameter.value:FloatParameter:0" name="max_delta">None</float>
+        </container>
+      </timeseries>
+      <phys classid="parameter.physical:PhysicalQuantity:0" name="elevation">
+        300.0
+        <int classid="parameter.physical:DisplayPlaces:0" name="display_places">0</int>
+        <string classid="parameter.physical:Unit:0" name="unit">
+          <![CDATA[m]]>
+        </string>
+      </phys>
+    </timeseries>
+  </container>
+  <container classid="parameter.fuel:Fuel:0" label="Fuel" name="fuel">
+    <string classid="parameter.fuel:FuelType:0" name="type">
+      <![CDATA[LPG]]>
+      <string classid="parameter.vector:StringVectorParameter:0" name="choices">[Natural Gas,Gasoline,Number 2 Diesel,Methanol,Ethanol,LPG,Number 1 Diesel]</string>
+    </string>
+    <string classid="parameter.value:StringParameter:0" name="id"/>
+    <float classid="parameter.fuel:FuelCharacteristic:0" name="alpha">
+      2.64
+      <float classid="parameter.value:NonNegativeFloatParameter:0" name="default">2.64</float>
+      <bool classid="parameter.value:BooleanParameter:0" name="use_default">True</bool>
+    </float>
+    <float classid="parameter.fuel:FuelCharacteristic:0" name="beta">
+      0.0
+      <float classid="parameter.value:NonNegativeFloatParameter:0" name="default">0.0</float>
+      <bool classid="parameter.value:BooleanParameter:0" name="use_default">True</bool>
+    </float>
+    <float classid="parameter.fuel:FuelCharacteristic:0" name="gamma">
+      0.0
+      <float classid="parameter.value:NonNegativeFloatParameter:0" name="default">0.0</float>
+      <bool classid="parameter.value:BooleanParameter:0" name="use_default">True</bool>
+    </float>
+    <float classid="parameter.fuel:FuelCharacteristic:0" name="delta">
+      0.0
+      <float classid="parameter.value:NonNegativeFloatParameter:0" name="default">0.0</float>
+      <bool classid="parameter.value:BooleanParameter:0" name="use_default">True</bool>
+    </float>
+    <float classid="parameter.fuel:FuelCharacteristic:0" name="carbon_mass_fraction">
+      0.819
+      <float classid="parameter.value:NonNegativeFloatParameter:0" name="default">0.819</float>
+      <bool classid="parameter.value:BooleanParameter:0" name="use_default">True</bool>
+      <float classid="parameter.value:NonNegativeFloatParameter:0" name="calculated">None</float>
+    </float>
+  </container>
+</Lab>
